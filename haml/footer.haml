@@ -1,0 +1,25 @@
+</div>
+/ #main
+
+%footer#colophon.site-footer.group{:role => "contentinfo"}
+	.site-info
+		%p <strong>BACA</strong><br>The Baltic Exchange<br>38 St Mary Avenue<br>London<br>EC3A 8BH<br>England
+
+		%p T: +44 (0)20 7623 5501<br>F: +44 (0)20 7369 1622
+
+		%p baca@baexchange.com
+	.site-smallprint.group
+		.text-left
+			%p 2013 &copy; BACA. All rights reserved
+		.text-right
+			%p Site designed by Design Inc
+		.text-center
+			<?php wp_nav_menu( array( 'theme_location' => 'footer', 'container' => 'nav', 'container_class' => 'group' ) ); ?>
+
+</div>
+/ #page
+
+<?php wp_footer(); ?>
+
+</body>
+</html>

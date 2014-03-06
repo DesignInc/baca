@@ -1,0 +1,33 @@
+<?php get_header(); ?>
+
+#primary.content-area
+	#content.site-content{:role => "main"}
+		:plain
+			<?php if(have_posts()) : ?>
+			<?php while(have_posts()) : the_post();
+			if(has_post_thumbnail()) {
+				$header_image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'page-image');
+				$header_image_link = $header_image[0];
+			} else {
+				$header_image_link = get_bloginfo( 'template_directory' ) . "/images/baca-page-header.jpg";
+			}
+			global $post; ?>
+		%section#page-title{:style => "background-image: url('<?php echo $header_image_link; ?>')"}
+			%h1 Council Members
+		}
+		#page-content.group
+			#content-container
+				#left-side
+					%h2 <?php the_title(); ?>
+					<?php the_content(); ?>
+				#right-side
+					:plain
+						<?php $member_logo = wp_get_attachment_image_src(get_field('member_profile_image'), 'member-logo');
+						$member_logo_src = $member_logo[0]; ?>
+					%img{:src => "<?php echo $member_logo_src; ?>", :alt => "<?php the_title(); ?>"}
+			:plain
+				<?php endwhile; ?>
+				<?php endif; ?>
+			<?php get_sidebar( 'council' ); ?>
+
+<?php get_footer(); ?>

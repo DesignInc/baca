@@ -1,0 +1,65 @@
+:plain
+	<?php
+	/*
+	Template Name: Login
+	*/
+
+	if(is_user_logged_in()) {
+		header("Location: " . home_url( "/" ));
+	}
+
+	if($_POST) {
+		global $wpdb;
+		$username = $wpdb->escape($_REQUEST['username']);
+		$password = $wpdb->escape($_REQUEST['password']);
+		$remember = $wpdb->escape($_REQUEST['remember']);
+
+		if($remember) $remember = "true";
+		else $remember = "false";
+
+		$login_data = array();
+		$login_data['user_login'] = $username;
+		$login_data['user_password'] = $password;
+		$login_data['remember'] = $remember;
+
+		$user_verify = wp_signon( $login_data, false );
+
+		if( is_wp_error($user_verify) ) {
+			header("Location: " . home_url( "/login/error/" ));
+		} else {
+			echo "<script type='text/javascript'>window.location='". home_url() ."'</script>";
+			exit();
+		}
+	}
+
+	get_header();
+	?>
+
+#primary.content-area
+	#content.site-content{:role => "main"}
+		:plain
+			<?php if(have_posts()) : ?>
+			<?php while(have_posts()) : the_post();
+			if(has_post_thumbnail()) {
+				$header_image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'page-image');
+				$header_image_link = $header_image[0];
+			} else {
+				$header_image_link = get_bloginfo( 'template_directory' ) . "/images/baca-page-header.jpg";
+			}
+			global $post; ?>
+		%section#page-title{:style => "background-image: url('<?php echo $header_image_link; ?>')"}
+			%h1 <?php echo get_the_title($post->post_parent); ?>
+		}
+		#page-content.group
+			#content-container
+				<h2><?php the_title(); ?></h2>
+				%form#login{:name => "form", :action => "<?php the_permalink(); ?>", :method => "post"}
+					%input#username{:type => "text", :placeholder => "Username", :name => "username"}
+					%input#password{:type => "password", :placeholder => "Password", :name => "password"}
+					%input#submit{:type => "submit", :name => "submit", :value => "Submit"}
+			:plain
+				<?php endwhile; ?>
+				<?php endif; ?>
+			<?php get_sidebar(); ?>
+
+<?php get_footer(); ?>

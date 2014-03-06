@@ -1,0 +1,41 @@
+<?php get_header(); ?>
+
+#primary.content-area
+	#content.site-content{:role => "main"}
+		%section#home-title
+			%h1 &lsquo;Where air charter professionals meet&rsquo;
+			%h2
+				%a{:href => "#"} Find out more about who we are &rsaquo;
+		#main-content.group
+			#content-container
+				%h3 BACA represents the interests of commercial aviation companies particularly in the aircharter industries and markets. Membership includes air brokers, charter airlines, airports, handling agents and FBOs, business aircraft operators, consultants and many others. <a href="#">Ready to join?</a>
+				%section.featured.featured-event
+					%h1 Featured Event
+					%img{:src => "<?php bloginfo( 'template_directory' ); ?>/images/baca-featured-event.jpg", :alt => "Featured Event"}
+					%p.top-story The 2013 BACA Spring Lunch was held at the magnificent Merchant Taylors' Hall <a href="#">Read&nbsp;more&nbsp;></a>
+
+					%h2 Upcoming events
+					%p <strong>July 18</strong>: Council meeting, Baltic Exchange 11:15 <a href="#">Read&nbsp;more&nbsp;></a>
+
+					%p <strong>Aug 15</strong>: Council meeting, Baltic Exchange 11:15 <a href="#">Read&nbsp;more&nbsp;></a>
+				%section.featured.featured-news
+					%h1 Featured News
+					%img{:src => "<?php bloginfo( 'template_directory' ); ?>/images/baca-featured-news.jpg", :alt => "Featured News"}
+					%p.top-story New Chairman and Deputy for BACA <a href="#">Read&nbsp;more&nbsp;></a>
+
+					%h2 Latest news
+					%p BACA selects Mission Aviation Fellowship as charity for 2013 <a href="#">Read&nbsp;more&nbsp;></a>
+
+					%p BACA offers Escrow financial protection service for members <a href="#">Read&nbsp;more&nbsp;></a>
+				%section.featured.featured-knowledge
+					%h1 Featured Knowledge
+					%img{:src => "<?php bloginfo( 'template_directory' ); ?>/images/baca-featured-knowledge.jpg", :alt => "Featured Knowledge"}
+					%p.top-story Current UK Air Passenger Duty rates and information. <a href="#">Read&nbsp;more&nbsp;></a>
+
+					%h2 Latest knowledge update
+					%p Current UK Air Passenger Duty rates and information. <a href="#">Read&nbsp;more&nbsp;></a>
+
+					%p Brokers and the Tour Operators Margin Scheme (TOMS) <a href="#">Read&nbsp;more&nbsp;></a>
+			<?php get_sidebar( 'home' ); ?>
+
+<?php get_footer(); ?>

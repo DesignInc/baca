@@ -1,0 +1,53 @@
+!!!
+<html <?php language_attributes(); ?>>
+%head
+	%meta{:charset => "<?php bloginfo( 'charset' ); ?>"}
+	%meta{:name => "viewport", :content => "width=device-width"}
+	%title
+		<?php wp_title( '|', true, 'right' ); ?>
+	%link{:rel => "profile", :href => "http://gmpg.org/xfn/11"}
+	%link{:rel => "pingback", :href => "<?php bloginfo( 'pingback_url' ); ?>"}
+	%link{:rel => "shortcut icon", :href => "<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico"}
+
+	:plain
+		<script type="text/javascript">
+		    // first, create the object that contains
+		    // configuration variables
+		    MTIConfig = {};
+
+		    // next, add a variable that will control
+		    // whether or not FOUT will be prevented
+		    MTIConfig.EnableCustomFOUTHandler = true // true = prevent FOUT
+		</script>
+
+	<?php wp_head(); ?>
+
+<body <?php body_class(); ?>>
+
+<div id="page" class="site">
+%header#masthead.site-header.group{:role => "banner"}
+	.site-branding
+		%h1.site-title
+			%a{:href => "<?php echo esc_url( home_url( '/' ) ); ?>", :title => "<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>", :rel => "home"} <?php bloginfo( 'name' ); ?>
+		%h2.site-description <?php bloginfo( 'description' ); ?>
+	.site-slope
+		%img{:src => "<?php bloginfo( 'template_directory' ); ?>/images/baca-top-slope.svg", :alt => ""}
+	.additional-head
+		<?php if( !is_user_logged_in() ): ?>
+		.login-signup
+			%a{:href => "<?php echo get_permalink( 69 ); ?>"} Sign in
+			%a{:href => "#"} Become a member
+		<?php endif; ?>
+		.information
+			:plain
+				<?php if( is_user_logged_in() ):
+				global $current_user;
+				get_currentuserinfo(); ?>
+			%p Welcome, <?php echo $current_user->user_login; ?>
+			<?php endif; ?>
+			%p Baltic Air Charter Association <span>|</span> T: +44 (0)20 7623 5501  E: info@baca.co.uk
+	%nav#site-navigation.main-navigation{:role => "navigation"}
+		<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+
+
+<div id="main" class="site-main">
