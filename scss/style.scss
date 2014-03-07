@@ -820,22 +820,36 @@ section#page-title {
 			.field-wrap {
 				float: left;
 			}
+			.textfield-left-wrap {
+				width: 440px;
+				padding: 6px;
+				margin-right: 10px;
+				float: left;
+				clear: left;
+				margin-right:4px;
+			}
+			.textfield-right-wrap {
+				width: 440px;
+				padding: 6px;
+				margin: 0;
+				float: left;
+				clear: right;
+				margin-left: 4px;
+			}
 			select.ninja-forms-field {
 				width: 446px;
 				padding: 6px;
 				border: 1px solid $baca-light-grey;
 			}
 			input.textfield-left {
-				width: 444px;
+				width: 100%;
 				padding: 6px;
-				margin-right: 10px;
 				float: left;
 			}
 			input.textfield-right {
-				width: 444px;
+				width: 100%;
 				padding: 6px;
-				margin: 0;
-				float: right;
+				float: left;
 			}
 			input.textfield-long {
 				width: 911px;

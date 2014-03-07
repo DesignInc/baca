@@ -24,43 +24,34 @@ time, mark, audio, video {
   border: 0;
   font: inherit;
   font-size: 100%;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 html {
-  line-height: 1;
-}
+  line-height: 1; }
 
 ol, ul {
-  list-style: none;
-}
+  list-style: none; }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 caption, th, td {
   text-align: left;
   font-weight: normal;
-  vertical-align: middle;
-}
+  vertical-align: middle; }
 
 q, blockquote {
-  quotes: none;
-}
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
 
 a img {
-  border: none;
-}
+  border: none; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block;
-}
+  display: block; }
 
 html {
   background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzIzMTk1NiIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjMDA2OWIzIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
@@ -69,262 +60,217 @@ html {
   background: -moz-linear-gradient(top, #231956, #0069b3, #ffffff);
   background: -o-linear-gradient(top, #231956, #0069b3, #ffffff);
   background: linear-gradient(top, #231956, #0069b3, #ffffff);
-  min-height: 100%;
-}
+  min-height: 100%; }
 
 body {
   color: #575756;
   font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif;
-  font-size: 62.5%;
-}
+  font-size: 62.5%; }
 
 .group:after {
   content: "";
   display: table;
-  clear: both;
-}
+  clear: both; }
 
 .clear {
   margin: 0;
   padding: 0;
-  clear: both;
-}
+  clear: both; }
 
 #page {
   margin: 40px auto;
-  width: 1000px;
-}
+  width: 1000px; }
 
 input {
   padding: 5px;
   border: 1px solid #575756;
   border-radius: 2px;
-  color: #000;
-}
+  color: #000; }
 
 input[value] {
-  color: #575756;
-}
+  color: #575756; }
 
 textarea {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 13px;
   padding: 5px;
   border: 1px solid #575756;
-  border-radius: 2px;
-}
+  border-radius: 2px; }
 
 label {
   font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
   color: #575756;
   font-size: 1.6em;
-  margin-top: .4em;
-}
+  margin-top: .4em; }
 
 h1 {
   font-size: 3em;
-  font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
-}
+  font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif; }
 
 h2 {
   font-size: 2.2em;
-  font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
-}
+  font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif; }
 
 h3 {
   font-size: 1.8em;
-  font-family: "Proxima N W01 Bold", Helvetica, Arial, sans-serif;
-}
+  font-family: "Proxima N W01 Bold", Helvetica, Arial, sans-serif; }
 
 h4 {
   font-size: 1.6em;
   font-family: "Proxima N W01 Bold", Helvetica, Arial, sans-serif;
-  margin: 1em 0;
-}
+  margin: 1em 0; }
 
 #page-content p, #full-width p, #registration-page p {
   font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
   font-size: 1.6em;
   margin-bottom: 1em;
-  line-height: 130%;
-}
-#page-content p a, #full-width p a, #registration-page p a {
-  font-family: "Proxima N W01 Bold", Helvetica, Arial, sans-serif;
-  color: #1a1259;
-  text-decoration: none;
-}
-#page-content p a:hover, #full-width p a:hover, #registration-page p a:hover {
-  text-decoration: underline;
-}
-#page-content p strong, #full-width p strong, #registration-page p strong {
-  font-weight: bold;
-}
+  line-height: 130%; }
+  #page-content p a, #full-width p a, #registration-page p a {
+    font-family: "Proxima N W01 Bold", Helvetica, Arial, sans-serif;
+    color: #1a1259;
+    text-decoration: none; }
+  #page-content p a:hover, #full-width p a:hover, #registration-page p a:hover {
+    text-decoration: underline; }
+  #page-content p strong, #full-width p strong, #registration-page p strong {
+    font-weight: bold; }
 
 header {
-  position: relative;
-}
-header .site-branding {
-  float: left;
-  width: 355px;
-  padding: 15px 0 15px 30px;
-  background-color: white;
-  -moz-border-radius-topleft: 20px;
-  -webkit-border-top-left-radius: 20px;
-  border-top-left-radius: 20px;
-}
-header .site-branding .site-title {
-  float: left;
-  width: 160px;
-  border-right: 1px solid #211554;
-}
-header .site-branding .site-title a {
-  background-image: url("images/baca-logo.svg");
-  background-position: center top;
-  background-repeat: no-repeat;
-  display: block;
-  text-indent: -9000px;
-  width: 112px;
-  height: 105px;
-}
-header .site-branding .site-description {
-  float: left;
-  font-size: 1.8em;
-  font-family: "Proxima N W01 Smbd", Helvetica, Arial, sans-serif;
-  color: #211554;
-  width: 175px;
-  margin: 15px 0 0 15px;
-}
-header .site-branding .sub-description {
-  float: left;
-  font-size: 1.4em;
-  font-family: "Proxima N W01 Bold", Helvetica, Arial, sans-serif;
-  color: #211554;
-  width: 260px;
-  margin: 5px 0;
-  position: absolute;
-  top: 103px;
-  left: 205px;
-}
-header .site-slope {
-  float: left;
-}
-header nav#site-navigation {
-  clear: both;
-  float: left;
-  width: 1000px;
-  background-color: white;
-  -moz-border-radius-topright: 20px;
-  -webkit-border-top-right-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom: 5px solid #ffdc00;
-  padding-top: 15px;
-  margin-top: -14px;
-}
-header nav#site-navigation ul {
-  margin: 0 25px;
-}
-header nav#site-navigation ul li {
-  float: left;
-  position: relative;
-  width: 108px;
-  height: 40px;
-  margin: 15px 5px 0px;
-}
-header nav#site-navigation ul li a {
-  display: block;
-  border-top: 2px solid #c6c6c5;
-  padding: 10px 0px 10px;
-  color: #1d1d1b;
-  font-size: 1.4em;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-header nav#site-navigation ul li a:hover {
-  border-top: 2px solid #211554;
-}
-header nav#site-navigation ul li:hover > ul {
-  display: block;
-}
-header nav#site-navigation ul li.current-menu-item a {
-  border-top: 2px solid #211554;
-}
-header nav#site-navigation ul ul {
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-  display: none;
-  float: left;
-  position: absolute;
-  top: 4em;
-  left: -3.1em;
-  z-index: 99999;
-  width: 205px;
-  background-color: #fff;
-}
-header nav#site-navigation ul ul li {
-  float: left;
-  width: 200px;
-  height: 100%;
-  margin: 0px 5px;
-}
-header nav#site-navigation ul ul li a {
-  width: 200px;
-  text-transform: none;
-}
-header .additional-head {
-  position: absolute;
-  right: 0;
-}
-header .additional-head .login-signup {
-  text-align: right;
-}
-header .additional-head .login-signup a {
-  display: inline-block;
-  background-color: #ffdc00;
-  font-size: 1.2em;
-  font-family: "Proxima N W01 Bold", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #211554;
-  width: 150px;
-  padding: 10px 0;
-  text-align: center;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
-}
-header .additional-head .login-signup a:hover {
-  color: #ffdc00;
-  background-color: #211554;
-}
-header .additional-head .information {
-  text-align: right;
-  margin-top: 30px;
-}
-header .additional-head .information p {
-  color: white;
-  font-size: 1.4em;
-  font-family: "Proxima N W01 Smbd", Helvetica, Arial, sans-serif;
-  margin: .8em 0;
-}
-header .additional-head .information p span {
-  color: #ffdc00;
-}
-header .additional-head .information p a {
-  color: #fff;
-  text-decoration: none;
-}
-header .additional-head .information p a#logout {
-  font-size: .8em;
-}
-header .additional-head .information p a:hover {
-  text-decoration: underline;
-}
-header .additional-head .information h2 {
-  color: #ffdc00;
-  font-size: 2.2em;
-  font-family: "Proxima N W01 Smbd", Helvetica, Arial, sans-serif;
-}
+  position: relative; }
+  header .site-branding {
+    float: left;
+    width: 355px;
+    padding: 15px 0 15px 30px;
+    background-color: white;
+    -moz-border-radius-topleft: 20px;
+    -webkit-border-top-left-radius: 20px;
+    border-top-left-radius: 20px; }
+    header .site-branding .site-title {
+      float: left;
+      width: 160px;
+      border-right: 1px solid #211554; }
+      header .site-branding .site-title a {
+        background-image: url("images/baca-logo.svg");
+        background-position: center top;
+        background-repeat: no-repeat;
+        display: block;
+        text-indent: -9000px;
+        width: 112px;
+        height: 105px; }
+    header .site-branding .site-description {
+      float: left;
+      font-size: 1.8em;
+      font-family: "Proxima N W01 Smbd", Helvetica, Arial, sans-serif;
+      color: #211554;
+      width: 175px;
+      margin: 15px 0 0 15px; }
+    header .site-branding .sub-description {
+      float: left;
+      font-size: 1.4em;
+      font-family: "Proxima N W01 Bold", Helvetica, Arial, sans-serif;
+      color: #211554;
+      width: 260px;
+      margin: 5px 0;
+      position: absolute;
+      top: 103px;
+      left: 205px; }
+  header .site-slope {
+    float: left; }
+  header nav#site-navigation {
+    clear: both;
+    float: left;
+    width: 1000px;
+    background-color: white;
+    -moz-border-radius-topright: 20px;
+    -webkit-border-top-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: 5px solid #ffdc00;
+    padding-top: 15px;
+    margin-top: -14px; }
+    header nav#site-navigation ul {
+      margin: 0 25px; }
+      header nav#site-navigation ul li {
+        float: left;
+        position: relative;
+        width: 108px;
+        height: 40px;
+        margin: 15px 5px 0px; }
+        header nav#site-navigation ul li a {
+          display: block;
+          border-top: 2px solid #c6c6c5;
+          padding: 10px 0px 10px;
+          color: #1d1d1b;
+          font-size: 1.4em;
+          text-transform: uppercase;
+          text-decoration: none; }
+        header nav#site-navigation ul li a:hover {
+          border-top: 2px solid #211554; }
+      header nav#site-navigation ul li:hover > ul {
+        display: block; }
+      header nav#site-navigation ul li.current-menu-item a {
+        border-top: 2px solid #211554; }
+    header nav#site-navigation ul ul {
+      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+      display: none;
+      float: left;
+      position: absolute;
+      top: 4em;
+      left: -3.1em;
+      z-index: 99999;
+      width: 205px;
+      background-color: #fff; }
+      header nav#site-navigation ul ul li {
+        float: left;
+        width: 200px;
+        height: 100%;
+        margin: 0px 5px; }
+        header nav#site-navigation ul ul li a {
+          width: 200px;
+          text-transform: none; }
+  header .additional-head {
+    position: absolute;
+    right: 0; }
+    header .additional-head .login-signup {
+      text-align: right; }
+      header .additional-head .login-signup a {
+        display: inline-block;
+        background-color: #ffdc00;
+        font-size: 1.2em;
+        font-family: "Proxima N W01 Bold", Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #211554;
+        width: 150px;
+        padding: 10px 0;
+        text-align: center;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        border-radius: 10px; }
+      header .additional-head .login-signup a:hover {
+        color: #ffdc00;
+        background-color: #211554; }
+    header .additional-head .information {
+      text-align: right;
+      margin-top: 30px; }
+      header .additional-head .information p {
+        color: white;
+        font-size: 1.4em;
+        font-family: "Proxima N W01 Smbd", Helvetica, Arial, sans-serif;
+        margin: .8em 0; }
+        header .additional-head .information p span {
+          color: #ffdc00; }
+        header .additional-head .information p a {
+          color: #fff;
+          text-decoration: none; }
+          header .additional-head .information p a#logout {
+            font-size: .8em; }
+        header .additional-head .information p a:hover {
+          text-decoration: underline; }
+      header .additional-head .information h2 {
+        color: #ffdc00;
+        font-size: 2.2em;
+        font-family: "Proxima N W01 Smbd", Helvetica, Arial, sans-serif; }
 
 #home-page {
   width: 1000px;
@@ -334,98 +280,79 @@ header .additional-head .information h2 {
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   border-radius: 20px;
-  background-color: white;
-}
-#home-page #content-container {
-  float: right;
-  width: 700px;
-  margin: 30px;
-}
-#home-page #content-container h3 {
-  font-size: 2.2em;
-  font-family: "Proxima N W01 Light", Helvetica, Arial, sans-serif;
-  line-height: 140%;
-}
-#home-page #content-container h3 a {
-  font-family: "Proxima N W01 Smbd", Helvetica, Arial, sans-serif;
-  color: #211554;
-  text-decoration: none;
-}
-#home-page #content-container section.featured {
-  float: left;
-  width: 220px;
-  margin: 50px 20px 0 0;
-}
-#home-page #content-container section.featured h1 {
-  font-family: "Proxima N W01 Bold", Helvetica, Arial, sans-serif;
-  font-size: 1.6em;
-  text-transform: uppercase;
-  margin-bottom: 1em;
-  padding-bottom: .5em;
-  border-bottom: 3px solid #000;
-}
-#home-page #content-container section.featured.featured-event h1 {
-  color: #567482;
-  border-color: #567482;
-}
-#home-page #content-container section.featured.featured-event h2 {
-  color: #567482;
-}
-#home-page #content-container section.featured.featured-news h1 {
-  color: #c66758;
-  border-color: #c66758;
-}
-#home-page #content-container section.featured.featured-news h2 {
-  color: #c66758;
-}
-#home-page #content-container section.featured.featured-knowledge {
-  margin-right: 0;
-}
-#home-page #content-container section.featured.featured-knowledge h1 {
-  color: #d5b874;
-  border-color: #d5b874;
-}
-#home-page #content-container section.featured.featured-knowledge h2 {
-  color: #d5b874;
-}
-#home-page #content-container section.featured .top-story {
-  font-size: 1em;
-  font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
-  color: #575756;
-  margin: .5em 0 1em;
-  min-height: 60px;
-}
-#home-page #content-container section.featured .top-story a {
-  font-family: "Proxima N W01 Bold", Helvetica, Arial, sans-serif;
-  color: #575756;
-  text-decoration: none;
-}
-#home-page #content-container section.featured h2 {
-  font-size: 1.6em;
-  font-family: "Proxima N W01 Bold", Helvetica, Arial, sans-serif;
-  margin-bottom: .5em;
-}
-#home-page #content-container section.featured p {
-  font-size: 1.5em;
-  font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
-  color: #575756;
-  margin: 0;
-  line-height: 16px;
-}
-#home-page #content-container section.featured p a {
-  font-family: "Proxima N W01 Bold", Helvetica, Arial, sans-serif;
-  color: #575756;
-  text-decoration: none;
-}
-#home-page #content-container section.featured img {
-  width: 220px;
-  height: 110px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
-}
+  background-color: white; }
+  #home-page #content-container {
+    float: right;
+    width: 700px;
+    margin: 30px; }
+    #home-page #content-container h3 {
+      font-size: 2.2em;
+      font-family: "Proxima N W01 Light", Helvetica, Arial, sans-serif;
+      line-height: 140%; }
+      #home-page #content-container h3 a {
+        font-family: "Proxima N W01 Smbd", Helvetica, Arial, sans-serif;
+        color: #211554;
+        text-decoration: none; }
+    #home-page #content-container section.featured {
+      float: left;
+      width: 220px;
+      margin: 50px 20px 0 0; }
+      #home-page #content-container section.featured h1 {
+        font-family: "Proxima N W01 Bold", Helvetica, Arial, sans-serif;
+        font-size: 1.6em;
+        text-transform: uppercase;
+        margin-bottom: 1em;
+        padding-bottom: .5em;
+        border-bottom: 3px solid #000; }
+      #home-page #content-container section.featured.featured-event h1 {
+        color: #567482;
+        border-color: #567482; }
+      #home-page #content-container section.featured.featured-event h2 {
+        color: #567482; }
+      #home-page #content-container section.featured.featured-news h1 {
+        color: #c66758;
+        border-color: #c66758; }
+      #home-page #content-container section.featured.featured-news h2 {
+        color: #c66758; }
+      #home-page #content-container section.featured.featured-knowledge {
+        margin-right: 0; }
+        #home-page #content-container section.featured.featured-knowledge h1 {
+          color: #d5b874;
+          border-color: #d5b874; }
+        #home-page #content-container section.featured.featured-knowledge h2 {
+          color: #d5b874; }
+      #home-page #content-container section.featured .top-story {
+        font-size: 1em;
+        font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
+        color: #575756;
+        margin: .5em 0 1em;
+        min-height: 60px; }
+        #home-page #content-container section.featured .top-story a {
+          font-family: "Proxima N W01 Bold", Helvetica, Arial, sans-serif;
+          color: #575756;
+          text-decoration: none; }
+      #home-page #content-container section.featured h2 {
+        font-size: 1.6em;
+        font-family: "Proxima N W01 Bold", Helvetica, Arial, sans-serif;
+        margin-bottom: .5em; }
+      #home-page #content-container section.featured p {
+        font-size: 1.5em;
+        font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
+        color: #575756;
+        margin: 0;
+        line-height: 16px; }
+        #home-page #content-container section.featured p a {
+          font-family: "Proxima N W01 Bold", Helvetica, Arial, sans-serif;
+          color: #575756;
+          text-decoration: none; }
+      #home-page #content-container section.featured img {
+        width: 220px;
+        height: 110px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        border-radius: 10px; }
 
 section#home-title {
   background-image: url("images/baca-top-slide.jpg");
@@ -442,26 +369,22 @@ section#home-title {
   border-bottom-left-radius: 20px;
   -moz-border-radius-bottomright: 20px;
   -webkit-border-bottom-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
-section#home-title h1 {
-  padding-top: 265px;
-  padding-left: 60px;
-  padding: 265px 40px 0;
-  color: white;
-  font-size: 5.5em;
-  font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
-}
-section#home-title h2 {
-  padding-top: 10px;
-  padding-left: 60px;
-  font-size: 1.6em;
-  font-family: "Proxima N W01 Bold", Helvetica, Arial, sans-serif;
-}
-section#home-title h2 a {
-  color: #ffdc00;
-  text-decoration: none;
-}
+  border-bottom-right-radius: 20px; }
+  section#home-title h1 {
+    padding-top: 265px;
+    padding-left: 60px;
+    padding: 265px 40px 0;
+    color: white;
+    font-size: 5.5em;
+    font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif; }
+  section#home-title h2 {
+    padding-top: 10px;
+    padding-left: 60px;
+    font-size: 1.6em;
+    font-family: "Proxima N W01 Bold", Helvetica, Arial, sans-serif; }
+    section#home-title h2 a {
+      color: #ffdc00;
+      text-decoration: none; }
 
 section#page-title {
   background-repeat: no-repeat;
@@ -477,22 +400,19 @@ section#page-title {
   border-bottom-left-radius: 20px;
   -moz-border-radius-bottomright: 20px;
   -webkit-border-bottom-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
-section#page-title h1 {
-  padding-top: 150px;
-  padding-left: 60px;
-  color: white;
-  font-size: 5.5em;
-  font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
-}
-section#page-title h2 {
-  padding-top: 180px;
-  padding-left: 60px;
-  color: white;
-  font-size: 3em;
-  font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
-}
+  border-bottom-right-radius: 20px; }
+  section#page-title h1 {
+    padding-top: 150px;
+    padding-left: 60px;
+    color: white;
+    font-size: 5.5em;
+    font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif; }
+  section#page-title h2 {
+    padding-top: 180px;
+    padding-left: 60px;
+    color: white;
+    font-size: 3em;
+    font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif; }
 
 #tribe-events-pg-template {
   background-color: white;
@@ -502,11 +422,9 @@ section#page-title h2 {
   border-bottom-left-radius: 20px;
   -moz-border-radius-bottomright: 20px;
   -webkit-border-bottom-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
-#tribe-events-pg-template .tribe-events-content p, #tribe-events-pg-template a.tribe-events-read-more {
-  font-size: 1.2em;
-}
+  border-bottom-right-radius: 20px; }
+  #tribe-events-pg-template .tribe-events-content p, #tribe-events-pg-template a.tribe-events-read-more {
+    font-size: 1.2em; }
 
 #page-content {
   width: 1000px;
@@ -516,300 +434,227 @@ section#page-title h2 {
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   border-radius: 20px;
-  background-color: white;
-}
-#page-content #content-container {
-  float: right;
-  width: 600px;
-  margin: 30px 60px;
-  color: #575756;
-}
-#page-content #content-container #left-side {
-  float: left;
-  width: 48%;
-}
-#page-content #content-container #left-side a {
-  color: #1a1259;
-  font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
-}
-#page-content #content-container #right-side {
-  float: right;
-  width: 48%;
-}
-#page-content #content-container #right-side p {
-  margin-bottom: .6em;
-}
-#page-content #content-container #right-side img.member-logo {
-  max-height: 160px;
-  margin-bottom: .6em;
-}
-#page-content #content-container #right-side a {
-  color: #1a1259;
-}
-#page-content #content-container #right-side a :hover {
-  text-decoration: underline;
-}
-#page-content #content-container #right-side a.social i {
-  font-size: 1.5em;
-  float: right;
-  padding: 10px 8px 0px;
-}
-#page-content #content-container #right-side a.social :hover {
-  text-decoration: none;
-}
-#page-content #content-container #right-side a.member-url {
-  float: right;
-}
-#page-content #content-container #right-side #member-blurb {
-  margin: 1em 0;
-}
-#page-content #content-container #right-side #member-blurb #borders {
-  border-top: 2px solid #1a1259;
-  border-bottom: 2px solid #1a1259;
-  padding: .8em 0;
-}
-#page-content #content-container #right-side p#sita {
-  text-align: right;
-}
-#page-content #content-container h2 {
-  margin-bottom: 15px;
-}
-#page-content #content-container h3 {
-  margin-bottom: 15px;
-}
-#page-content #content-container h3 a {
-  color: #211554;
-  font-weight: bold;
-  text-decoration: none;
-}
-#page-content #content-container ul {
-  list-style-type: none;
-  margin: 1em 0 1em 1em;
-  padding-left: 1em;
-}
-#page-content #content-container ul li {
-  font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 130%;
-}
-#page-content #content-container ol {
-  list-style-type: decimal;
-  margin: 1em 0 1em 1em;
-  padding-left: 1em;
-}
-#page-content #content-container ol li {
-  font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 130%;
-}
-#page-content #content-container img {
-  margin-bottom: 10px;
-}
-#page-content #content-container #back {
-  font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
-  font-size: 1.2em;
-  margin-bottom: 2em;
-  text-align: right;
-}
-#page-content #content-container #back a {
-  color: #1a1259;
-  text-decoration: underline;
-}
-#page-content #content-container #back a:hover {
-  text-decoration: none;
-}
-#page-content #content-container #members-list {
-  margin-top: 20px;
-}
-#page-content #content-container #members-list ul {
-  margin-left: -8px;
-}
-#page-content #content-container #members-list ul li {
-  list-style: none;
-  line-height: 12px;
-}
-#page-content #content-container #members-list ul li p {
-  font-size: 1em;
-  font-weight: normal;
-}
-#page-content #content-container #members-list ul li a {
-  color: #211554;
-}
-#page-content #content-container #members-list ul li a:hover {
-  color: #211554;
-  text-decoration: underline;
-}
-#page-content #content-container #council-members table {
-  width: 100%;
-}
-#page-content #content-container #council-members td {
-  width: 50%;
-  padding: 10px 10px 10px 0;
-  border-bottom: 1px solid #c6c6c5;
-}
-#page-content #content-container #council-members img {
-  max-width: 120px;
-  margin-right: 120px;
-  border: 1px solid #c6c6c5;
-}
-#page-content #content-container #council-members p span {
-  font-size: 20px;
-}
-#page-content #content-container table#links td {
-  padding: 10px 0 10px;
-  border-bottom: 1px solid #c6c6c5;
-}
-#page-content #content-container table#links img {
-  max-width: 200px;
-  padding: 10px;
-}
-#page-content #content-container section.blog-item {
-  margin-bottom: 30px;
-}
-#page-content #content-container section.blog-item h1 {
-  font-size: 2.4em;
-  font-family: "Proxima N W01 Bold", Helvetica, Arial, sans-serif;
-  margin-bottom: 8px;
-}
-#page-content #content-container section.blog-item h1 a {
-  color: #211554;
-  text-decoration: none;
-}
-#page-content #content-container section.blog-item h1 a:hover {
-  text-decoration: underline;
-}
-#page-content #content-container section.blog-item img {
-  width: inherit;
-  max-height: 200px;
-  margin-bottom: 10px;
-}
-#page-content #content-container section.blog-item p {
-  margin-bottom: 5px;
-}
-#page-content #content-container .commentlist ul {
-  margin: 0;
-}
-#page-content #content-container .commentlist p {
-  font-size: 16px;
-}
-#page-content #content-container .commentlist a {
-  color: #211554;
-  text-decoration: none;
-}
-#page-content #content-container .commentlist a:hover {
-  text-decoration: underline;
-}
-#page-content #content-container .commentlist cite {
-  font-size: 18px;
-  font-weight: bold;
-}
-#page-content #content-container .commentlist .reply {
-  margin-bottom: 10px;
-}
-#page-content #content-container #respond a {
-  color: #211554;
-  text-decoration: none;
-}
-#page-content #content-container #respond a:hover {
-  text-decoration: underline;
-}
-#page-content #content-container #respond .cancel-comment-reply {
-  font-size: 14px;
-}
-#page-content #content-container #respond form textarea {
-  margin-bottom: 6px;
-}
+  background-color: white; }
+  #page-content #content-container {
+    float: right;
+    width: 600px;
+    margin: 30px 60px;
+    color: #575756; }
+    #page-content #content-container #left-side {
+      float: left;
+      width: 48%; }
+      #page-content #content-container #left-side a {
+        color: #1a1259;
+        font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif; }
+    #page-content #content-container #right-side {
+      float: right;
+      width: 48%; }
+      #page-content #content-container #right-side p {
+        margin-bottom: .6em; }
+      #page-content #content-container #right-side img.member-logo {
+        max-height: 160px;
+        margin-bottom: .6em; }
+      #page-content #content-container #right-side a {
+        color: #1a1259; }
+        #page-content #content-container #right-side a :hover {
+          text-decoration: underline; }
+      #page-content #content-container #right-side a.social i {
+        font-size: 1.5em;
+        float: right;
+        padding: 10px 8px 0px; }
+      #page-content #content-container #right-side a.social :hover {
+        text-decoration: none; }
+      #page-content #content-container #right-side a.member-url {
+        float: right; }
+      #page-content #content-container #right-side #member-blurb {
+        margin: 1em 0; }
+        #page-content #content-container #right-side #member-blurb #borders {
+          border-top: 2px solid #1a1259;
+          border-bottom: 2px solid #1a1259;
+          padding: .8em 0; }
+      #page-content #content-container #right-side p#sita {
+        text-align: right; }
+    #page-content #content-container h2 {
+      margin-bottom: 15px; }
+    #page-content #content-container h3 {
+      margin-bottom: 15px; }
+      #page-content #content-container h3 a {
+        color: #211554;
+        font-weight: bold;
+        text-decoration: none; }
+    #page-content #content-container ul {
+      list-style-type: none;
+      margin: 1em 0 1em 1em;
+      padding-left: 1em; }
+      #page-content #content-container ul li {
+        font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        line-height: 130%; }
+    #page-content #content-container ol {
+      list-style-type: decimal;
+      margin: 1em 0 1em 1em;
+      padding-left: 1em; }
+      #page-content #content-container ol li {
+        font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        line-height: 130%; }
+    #page-content #content-container img {
+      margin-bottom: 10px; }
+    #page-content #content-container #back {
+      font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
+      font-size: 1.2em;
+      margin-bottom: 2em;
+      text-align: right; }
+      #page-content #content-container #back a {
+        color: #1a1259;
+        text-decoration: underline; }
+      #page-content #content-container #back a:hover {
+        text-decoration: none; }
+    #page-content #content-container #members-list {
+      margin-top: 20px; }
+      #page-content #content-container #members-list ul {
+        margin-left: -8px; }
+        #page-content #content-container #members-list ul li {
+          list-style: none;
+          line-height: 12px; }
+          #page-content #content-container #members-list ul li p {
+            font-size: 1em;
+            font-weight: normal; }
+          #page-content #content-container #members-list ul li a {
+            color: #211554; }
+          #page-content #content-container #members-list ul li a:hover {
+            color: #211554;
+            text-decoration: underline; }
+    #page-content #content-container #council-members table {
+      width: 100%; }
+    #page-content #content-container #council-members td {
+      width: 50%;
+      padding: 10px 10px 10px 0;
+      border-bottom: 1px solid #c6c6c5; }
+    #page-content #content-container #council-members img {
+      max-width: 120px;
+      margin-right: 120px;
+      border: 1px solid #c6c6c5; }
+    #page-content #content-container #council-members p span {
+      font-size: 20px; }
+    #page-content #content-container table#links td {
+      padding: 10px 0 10px;
+      border-bottom: 1px solid #c6c6c5; }
+    #page-content #content-container table#links img {
+      max-width: 200px;
+      padding: 10px; }
+    #page-content #content-container section.blog-item {
+      margin-bottom: 30px; }
+      #page-content #content-container section.blog-item h1 {
+        font-size: 2.4em;
+        font-family: "Proxima N W01 Bold", Helvetica, Arial, sans-serif;
+        margin-bottom: 8px; }
+        #page-content #content-container section.blog-item h1 a {
+          color: #211554;
+          text-decoration: none; }
+          #page-content #content-container section.blog-item h1 a:hover {
+            text-decoration: underline; }
+      #page-content #content-container section.blog-item img {
+        width: inherit;
+        max-height: 200px;
+        margin-bottom: 10px; }
+      #page-content #content-container section.blog-item p {
+        margin-bottom: 5px; }
+    #page-content #content-container .commentlist ul {
+      margin: 0; }
+    #page-content #content-container .commentlist p {
+      font-size: 16px; }
+    #page-content #content-container .commentlist a {
+      color: #211554;
+      text-decoration: none; }
+      #page-content #content-container .commentlist a:hover {
+        text-decoration: underline; }
+    #page-content #content-container .commentlist cite {
+      font-size: 18px;
+      font-weight: bold; }
+    #page-content #content-container .commentlist .reply {
+      margin-bottom: 10px; }
+    #page-content #content-container #respond a {
+      color: #211554;
+      text-decoration: none; }
+      #page-content #content-container #respond a:hover {
+        text-decoration: underline; }
+    #page-content #content-container #respond .cancel-comment-reply {
+      font-size: 14px; }
+    #page-content #content-container #respond form textarea {
+      margin-bottom: 6px; }
 
 #full-width, #registration-page {
   width: 1000px;
-  background-color: white;
-}
-#full-width #content-container, #registration-page #content-container {
-  padding: 30px;
-}
-#full-width #content-container h2, #registration-page #content-container h2 {
-  font-size: 3.2em;
-  font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
-  color: #211554;
-  margin-bottom: 20px;
-  float: left;
-}
-#full-width #content-container #login input#username, #full-width #content-container #login input#password, #registration-page #content-container #login input#username, #registration-page #content-container #login input#password {
-  width: 46%;
-  padding: 8px;
-}
-#full-width #content-container #login input#username, #registration-page #content-container #login input#username {
-  margin-right: 20px;
-}
-#full-width #content-container .submit, #registration-page #content-container .submit {
-  float: right;
-  display: inline-block;
-  background-color: #ffdc00;
-  font-size: 1.2em;
-  font-family: "Proxima N W01 Bold", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #211554;
-  width: 100px;
-  padding: 8px 0;
-  margin: 15px;
-  text-align: center;
-  border: none;
-  cursor: pointer;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
-}
-#full-width #content-container .submit:hover, #registration-page #content-container .submit:hover {
-  color: #ffdc00;
-  background-color: #211554;
-}
-#full-width #content-container div#signin-error, #registration-page #content-container div#signin-error {
-  font-size: 14px;
-  font-weight: bold;
-  text-align: right;
-  margin-bottom: 10px;
-  float: right;
-}
-#full-width #content-container div#signin-error span, #registration-page #content-container div#signin-error span {
-  color: red;
-}
-#full-width #content-container div#signin-error a, #registration-page #content-container div#signin-error a {
-  color: #575756;
-  text-decoration: underline;
-}
-#full-width #content-container div#signin-error a:hover, #registration-page #content-container div#signin-error a:hover {
-  text-decoration: none;
-}
-#full-width #content-container div#links, #registration-page #content-container div#links {
-  padding: 20px 10px 10px;
-}
-#full-width #content-container div#links p, #registration-page #content-container div#links p {
-  line-height: 10px;
-}
-#full-width #content-container table, #registration-page #content-container table {
-  font-size: 1.6em;
-  margin-bottom: 15px;
-}
-#full-width #content-container table td, #registration-page #content-container table td {
-  padding: 5px 0;
-}
-#full-width #content-container .woocommerce h2, #registration-page #content-container .woocommerce h2 {
-  font-size: 1.8em;
-  margin: 5px 20px 0 0;
-}
-#full-width #content-container .woocommerce .cart_totals table td, #registration-page #content-container .woocommerce .cart_totals table td {
-  padding: 5px;
-}
-#full-width #content-container .woocommerce .cart_totals table td, #full-width #content-container .woocommerce .cart_totals table th, #registration-page #content-container .woocommerce .cart_totals table td, #registration-page #content-container .woocommerce .cart_totals table th {
-  width: 50%;
-}
-#full-width #content-container .woocommerce .cart_totals table span, #registration-page #content-container .woocommerce .cart_totals table span {
-  float: right;
-  margin-right: 30px;
-}
+  background-color: white; }
+  #full-width #content-container, #registration-page #content-container {
+    padding: 30px; }
+    #full-width #content-container h2, #registration-page #content-container h2 {
+      font-size: 3.2em;
+      font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
+      color: #211554;
+      margin-bottom: 20px;
+      float: left; }
+    #full-width #content-container #login input#username, #full-width #content-container #login input#password, #registration-page #content-container #login input#username, #registration-page #content-container #login input#password {
+      width: 46%;
+      padding: 8px; }
+    #full-width #content-container #login input#username, #registration-page #content-container #login input#username {
+      margin-right: 20px; }
+    #full-width #content-container .submit, #registration-page #content-container .submit {
+      float: right;
+      display: inline-block;
+      background-color: #ffdc00;
+      font-size: 1.2em;
+      font-family: "Proxima N W01 Bold", Helvetica, Arial, sans-serif;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #211554;
+      width: 100px;
+      padding: 8px 0;
+      margin: 15px;
+      text-align: center;
+      border: none;
+      cursor: pointer;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      border-radius: 10px; }
+    #full-width #content-container .submit:hover, #registration-page #content-container .submit:hover {
+      color: #ffdc00;
+      background-color: #211554; }
+    #full-width #content-container div#signin-error, #registration-page #content-container div#signin-error {
+      font-size: 14px;
+      font-weight: bold;
+      text-align: right;
+      margin-bottom: 10px;
+      float: right; }
+      #full-width #content-container div#signin-error span, #registration-page #content-container div#signin-error span {
+        color: red; }
+      #full-width #content-container div#signin-error a, #registration-page #content-container div#signin-error a {
+        color: #575756;
+        text-decoration: underline; }
+      #full-width #content-container div#signin-error a:hover, #registration-page #content-container div#signin-error a:hover {
+        text-decoration: none; }
+    #full-width #content-container div#links, #registration-page #content-container div#links {
+      padding: 20px 10px 10px; }
+      #full-width #content-container div#links p, #registration-page #content-container div#links p {
+        line-height: 10px; }
+    #full-width #content-container table, #registration-page #content-container table {
+      font-size: 1.6em;
+      margin-bottom: 15px; }
+      #full-width #content-container table td, #registration-page #content-container table td {
+        padding: 5px 0; }
+    #full-width #content-container .woocommerce h2, #registration-page #content-container .woocommerce h2 {
+      font-size: 1.8em;
+      margin: 5px 20px 0 0; }
+    #full-width #content-container .woocommerce .cart_totals table td, #registration-page #content-container .woocommerce .cart_totals table td {
+      padding: 5px; }
+    #full-width #content-container .woocommerce .cart_totals table td, #full-width #content-container .woocommerce .cart_totals table th, #registration-page #content-container .woocommerce .cart_totals table td, #registration-page #content-container .woocommerce .cart_totals table th {
+      width: 50%; }
+    #full-width #content-container .woocommerce .cart_totals table span, #registration-page #content-container .woocommerce .cart_totals table span {
+      float: right;
+      margin-right: 30px; }
 
 #full-width {
   padding-bottom: 30px;
@@ -817,155 +662,134 @@ section#page-title h2 {
   -moz-border-radius: 0px 0px 20px 20px;
   -ms-border-radius: 0px 0px 20px 20px;
   -o-border-radius: 0px 0px 20px 20px;
-  border-radius: 0px 0px 20px 20px;
-}
-#full-width #content-container ul {
-  list-style-type: disc;
-  margin: 1em 0 1em 1em;
-  padding-left: 1em;
-}
-#full-width #content-container ul li {
-  font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 130%;
-}
-#full-width #content-container ol {
-  list-style-type: decimal;
-  margin: 1em 0 1em 1em;
-  padding-left: 1em;
-}
-#full-width #content-container ol li {
-  font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 130%;
-}
-#full-width #content-container form input[type=text]:focus {
-  color: #000;
-}
-#full-width #content-container form label {
-  font-size: 1.4em;
-}
-#full-width #content-container form p {
-  font-weight: normal;
-  margin: 0;
-}
-#full-width #content-container form .list-radio-wrap {
-  clear: both;
-  float: left;
-  width: 600px;
-}
-#full-width #content-container form .list-radio-wrap ul {
-  clear: both;
-  margin: 0;
-  padding: 10px 0;
-}
-#full-width #content-container form .list-radio-wrap ul li {
-  font-size: 10px;
-  margin-right: 100px;
-}
-#full-width #content-container form .text-wrap:after {
-  clear: none;
-}
-#full-width #content-container form .field-wrap {
-  float: left;
-}
-#full-width #content-container form select.ninja-forms-field {
-  width: 446px;
-  padding: 6px;
-  border: 1px solid #c6c6c5;
-}
-#full-width #content-container form input.textfield-left {
-  width: 444px;
-  padding: 6px;
-  margin-right: 10px;
-  float: left;
-}
-#full-width #content-container form input.textfield-right {
-  width: 444px;
-  padding: 6px;
-  margin: 0;
-  float: right;
-}
-#full-width #content-container form input.textfield-long {
-  width: 911px;
-  padding: 6px;
-  margin: 0;
-  float: left;
-}
-#full-width #content-container form div.text {
-  width: 911px;
-  padding: 6px 0;
-  margin: 0;
-  float: left;
-}
-#full-width #content-container form textarea {
-  width: 910px;
-  padding: 6px;
-  margin: 0 10px 8px 0;
-  clear: both;
-}
-#full-width #content-container form input.rep-name {
-  margin-top: 10px;
-}
-#full-width #content-container form hr {
-  border: 0;
-  height: 10px;
-  color: #fff;
-  background-color: #fff;
-  clear: both;
-}
-#full-width #content-container form .drop-down1, #full-width #content-container form .drop-down2 {
-  clear: both;
-}
-#full-width #content-container form .ninja-forms-field-error {
-  color: red;
-  clear: both;
-}
-#full-width #content-container form .ninja-forms-success-msg {
-  color: blue;
-  clear: both;
-}
-#full-width #content-container .ninja-forms-error-msg {
-  color: red;
-  font-size: 1.6em;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-#full-width #content-container #sitemap {
-  width: 1000px;
-}
-#full-width #content-container #sitemap .site-map {
-  float: left;
-  width: 180px;
-  margin: 0 10px;
-}
-#full-width #content-container #sitemap .site-map ul {
-  margin: 0;
-  padding: 0;
-}
-#full-width #content-container #sitemap .site-map p, #full-width #content-container #sitemap .site-map a, #full-width #content-container #sitemap .site-map li {
-  font-size: 12px;
-  font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
-  margin: 1em 0;
-  list-style-type: none;
-}
-#full-width #content-container #sitemap .site-map a {
-  color: #211554;
-  text-decoration: none;
-}
-#full-width #content-container #sitemap .site-map a:hover {
-  text-decoration: underline;
-}
-#full-width #content-container #sitemap .site-map li {
-  color: #575756;
-  font-weight: bold;
-  margin: .8em 0;
-}
+  border-radius: 0px 0px 20px 20px; }
+  #full-width #content-container ul {
+    list-style-type: disc;
+    margin: 1em 0 1em 1em;
+    padding-left: 1em; }
+    #full-width #content-container ul li {
+      font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 130%; }
+  #full-width #content-container ol {
+    list-style-type: decimal;
+    margin: 1em 0 1em 1em;
+    padding-left: 1em; }
+    #full-width #content-container ol li {
+      font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 130%; }
+  #full-width #content-container form input[type=text]:focus {
+    color: #000; }
+  #full-width #content-container form label {
+    font-size: 1.4em; }
+  #full-width #content-container form p {
+    font-weight: normal;
+    margin: 0; }
+  #full-width #content-container form .list-radio-wrap {
+    clear: both;
+    float: left;
+    width: 600px; }
+    #full-width #content-container form .list-radio-wrap ul {
+      clear: both;
+      margin: 0;
+      padding: 10px 0; }
+      #full-width #content-container form .list-radio-wrap ul li {
+        font-size: 10px;
+        margin-right: 100px; }
+  #full-width #content-container form .text-wrap:after {
+    clear: none; }
+  #full-width #content-container form .field-wrap {
+    float: left; }
+  #full-width #content-container form .textfield-left-wrap {
+    width: 440px;
+    padding: 6px;
+    margin-right: 10px;
+    float: left;
+    clear: left;
+    margin-right: 4px; }
+  #full-width #content-container form .textfield-right-wrap {
+    width: 440px;
+    padding: 6px;
+    margin: 0;
+    float: left;
+    clear: right;
+    margin-left: 4px; }
+  #full-width #content-container form select.ninja-forms-field {
+    width: 446px;
+    padding: 6px;
+    border: 1px solid #c6c6c5; }
+  #full-width #content-container form input.textfield-left {
+    width: 100%;
+    padding: 6px;
+    float: left; }
+  #full-width #content-container form input.textfield-right {
+    width: 100%;
+    padding: 6px;
+    float: left; }
+  #full-width #content-container form input.textfield-long {
+    width: 911px;
+    padding: 6px;
+    margin: 0;
+    float: left; }
+  #full-width #content-container form div.text {
+    width: 911px;
+    padding: 6px 0;
+    margin: 0;
+    float: left; }
+  #full-width #content-container form textarea {
+    width: 910px;
+    padding: 6px;
+    margin: 0 10px 8px 0;
+    clear: both; }
+  #full-width #content-container form input.rep-name {
+    margin-top: 10px; }
+  #full-width #content-container form hr {
+    border: 0;
+    height: 10px;
+    color: #fff;
+    background-color: #fff;
+    clear: both; }
+  #full-width #content-container form .drop-down1, #full-width #content-container form .drop-down2 {
+    clear: both; }
+  #full-width #content-container form .ninja-forms-field-error {
+    color: red;
+    clear: both; }
+  #full-width #content-container form .ninja-forms-success-msg {
+    color: blue;
+    clear: both; }
+  #full-width #content-container .ninja-forms-error-msg {
+    color: red;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 5px; }
+  #full-width #content-container #sitemap {
+    width: 1000px; }
+    #full-width #content-container #sitemap .site-map {
+      float: left;
+      width: 180px;
+      margin: 0 10px; }
+      #full-width #content-container #sitemap .site-map ul {
+        margin: 0;
+        padding: 0; }
+      #full-width #content-container #sitemap .site-map p, #full-width #content-container #sitemap .site-map a, #full-width #content-container #sitemap .site-map li {
+        font-size: 12px;
+        font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
+        margin: 1em 0;
+        list-style-type: none; }
+      #full-width #content-container #sitemap .site-map a {
+        color: #211554;
+        text-decoration: none; }
+        #full-width #content-container #sitemap .site-map a:hover {
+          text-decoration: underline; }
+      #full-width #content-container #sitemap .site-map li {
+        color: #575756;
+        font-weight: bold;
+        margin: .8em 0; }
 
 .ninja-forms-required-items {
   margin-bottom: 10px;
-  font-size: 12px;
-}
+  font-size: 12px; }
 
 #registration-page {
   -webkit-border-radius: 20px;
@@ -973,107 +797,82 @@ section#page-title h2 {
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   border-radius: 20px;
-  margin-top: 30px;
-}
-#registration-page #content-container form#registration input.field {
-  width: 438px;
-  padding: 6px;
-  margin: 0 25px 8px 0;
-}
-#registration-page #content-container form#registration input#checkbox {
-  margin: 0;
-}
-#registration-page #content-container form#registration table {
-  margin-bottom: 15px;
-}
-#registration-page #content-container #checkbox {
-  width: 20px;
-  height: 30px;
-  float: left;
-  margin-right: 10px;
-}
-#registration-page #content-container div#reg-error {
-  font-size: 2em;
-  font-weight: bold;
-  color: red;
-  margin-bottom: 10px;
-}
-#registration-page #content-container p.reg-errors {
-  font-size: 1.6em;
-  color: red;
-  line-height: 10px;
-}
+  margin-top: 30px; }
+  #registration-page #content-container form#registration input.field {
+    width: 438px;
+    padding: 6px;
+    margin: 0 25px 8px 0; }
+  #registration-page #content-container form#registration input#checkbox {
+    margin: 0; }
+  #registration-page #content-container form#registration table {
+    margin-bottom: 15px; }
+  #registration-page #content-container #checkbox {
+    width: 20px;
+    height: 30px;
+    float: left;
+    margin-right: 10px; }
+  #registration-page #content-container div#reg-error {
+    font-size: 2em;
+    font-weight: bold;
+    color: red;
+    margin-bottom: 10px; }
+  #registration-page #content-container p.reg-errors {
+    font-size: 1.6em;
+    color: red;
+    line-height: 10px; }
 
 #secondary {
   margin: 30px;
   width: 180px;
-  float: left;
-}
-#secondary.page-sidebar {
-  width: 220px;
-}
-#secondary img.banner {
-  float: right;
-}
-#secondary ul {
-  border-top: 3px solid #1a1259;
-  border-bottom: 3px solid #1a1259;
-}
-#secondary ul li {
-  font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  padding: 10px 0;
-  border-bottom: 2px solid #c6c6c5;
-}
-#secondary ul li a {
-  color: #575756;
-  text-decoration: none;
-}
-#secondary ul li a:hover {
-  font-family: "Proxima N W01 Bold", Helvetica, Arial, sans-serif;
-  color: #1a1259;
-}
-#secondary ul li.current_page_item a {
-  font-family: "Proxima N W01 Bold", Helvetica, Arial, sans-serif;
-  color: #1a1259;
-}
-#secondary ul li:last-child {
-  border-bottom: none;
-}
-#secondary p {
-  margin: 0 1em 1em;
-  font-size: 1.6em;
-  line-height: 18px;
-}
-#secondary p span {
-  color: #1a1259;
-  font-weight: bold;
-}
-#secondary p a {
-  font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
-  color: #1a1259;
-  text-decoration: none;
-}
-#secondary p a:hover {
-  text-decoration: underline;
-}
-#secondary h3 {
-  margin-bottom: 10px;
-}
-#secondary section {
-  margin-bottom: 50px;
-}
-#secondary form#search {
-  margin-bottom: 20px;
-}
-#secondary form#search input[type=text] {
-  height: 18px;
-}
+  float: left; }
+  #secondary.page-sidebar {
+    width: 220px; }
+  #secondary img.banner {
+    float: right; }
+  #secondary ul {
+    border-top: 3px solid #1a1259;
+    border-bottom: 3px solid #1a1259; }
+    #secondary ul li {
+      font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      padding: 10px 0;
+      border-bottom: 2px solid #c6c6c5; }
+      #secondary ul li a {
+        color: #575756;
+        text-decoration: none; }
+      #secondary ul li a:hover {
+        font-family: "Proxima N W01 Bold", Helvetica, Arial, sans-serif;
+        color: #1a1259; }
+    #secondary ul li.current_page_item a {
+      font-family: "Proxima N W01 Bold", Helvetica, Arial, sans-serif;
+      color: #1a1259; }
+    #secondary ul li:last-child {
+      border-bottom: none; }
+  #secondary p {
+    margin: 0 1em 1em;
+    font-size: 1.6em;
+    line-height: 18px; }
+    #secondary p span {
+      color: #1a1259;
+      font-weight: bold; }
+    #secondary p a {
+      font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
+      color: #1a1259;
+      text-decoration: none; }
+    #secondary p a:hover {
+      text-decoration: underline; }
+  #secondary h3 {
+    margin-bottom: 10px; }
+  #secondary section {
+    margin-bottom: 50px; }
+  #secondary form#search {
+    margin-bottom: 20px; }
+    #secondary form#search input[type=text] {
+      height: 18px; }
 
 .pagination li {
   display: inline-block;
-  padding: 5px;
-}
+  padding: 5px; }
 
 footer {
   width: 1000px;
@@ -1084,86 +883,67 @@ footer {
   -o-border-radius: 20px;
   border-radius: 20px;
   background-color: #211554;
-  color: white;
-}
-footer p, footer a, footer li {
-  font-size: 11px;
-  font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
-  margin: 1em 0;
-  list-style-type: none;
-}
-footer a {
-  color: white;
-  text-decoration: none;
-}
-footer a:hover {
-  text-decoration: underline;
-}
-footer .site-info {
-  float: left;
-  width: 160px;
-  margin: 20px 20px;
-}
-footer .site-info p span {
-  color: #ffdc00;
-  font-size: 12px;
-}
-footer .site-info li {
-  color: #ffdc00;
-  font-size: 12px;
-  margin: .8em 0;
-}
-footer .site-info a.social i {
-  font-size: 2.2em;
-  padding: 10px 10px 0px 0px;
-}
-footer .site-info a.social:hover {
-  text-decoration: none;
-}
-footer .site-smallprint {
-  clear: left;
-  border-top: 1px solid #ffdc00;
-  padding-top: 10px;
-  margin: 20px;
-}
-footer .site-smallprint .text-left {
-  float: left;
-  width: 200px;
-}
-footer .site-smallprint .text-left p {
-  font-size: 1.1em;
-  font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
-}
-footer .site-smallprint .text-right {
-  float: right;
-  width: 200px;
-}
-footer .site-smallprint .text-right p {
-  font-size: 1.1em;
-  font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
-  text-align: right;
-}
-footer .site-smallprint .text-center {
-  margin: 0 auto;
-  width: 450px;
-}
-footer .site-smallprint .text-center ul li {
-  float: left;
-  font-size: 1.1em;
-  font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
-  border-right: 1px solid white;
-  margin-right: 10px;
-  padding-right: 10px;
-}
-footer .site-smallprint .text-center ul li a {
-  color: white;
-  text-decoration: none;
-}
-footer .site-smallprint .text-center ul li a:hover {
-  text-decoration: underline;
-}
-footer .site-smallprint .text-center ul li:last-child {
-  border-right: none;
-  margin-right: 0;
-  padding-right: 0;
-}
+  color: white; }
+  footer p, footer a, footer li {
+    font-size: 11px;
+    font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
+    margin: 1em 0;
+    list-style-type: none; }
+  footer a {
+    color: white;
+    text-decoration: none; }
+    footer a:hover {
+      text-decoration: underline; }
+  footer .site-info {
+    float: left;
+    width: 160px;
+    margin: 20px 20px; }
+    footer .site-info p span {
+      color: #ffdc00;
+      font-size: 12px; }
+    footer .site-info li {
+      color: #ffdc00;
+      font-size: 12px;
+      margin: .8em 0; }
+    footer .site-info a.social i {
+      font-size: 2.2em;
+      padding: 10px 10px 0px 0px; }
+    footer .site-info a.social:hover {
+      text-decoration: none; }
+  footer .site-smallprint {
+    clear: left;
+    border-top: 1px solid #ffdc00;
+    padding-top: 10px;
+    margin: 20px; }
+    footer .site-smallprint .text-left {
+      float: left;
+      width: 200px; }
+      footer .site-smallprint .text-left p {
+        font-size: 1.1em;
+        font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif; }
+    footer .site-smallprint .text-right {
+      float: right;
+      width: 200px; }
+      footer .site-smallprint .text-right p {
+        font-size: 1.1em;
+        font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
+        text-align: right; }
+    footer .site-smallprint .text-center {
+      margin: 0 auto;
+      width: 450px; }
+      footer .site-smallprint .text-center ul li {
+        float: left;
+        font-size: 1.1em;
+        font-family: "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
+        border-right: 1px solid white;
+        margin-right: 10px;
+        padding-right: 10px; }
+        footer .site-smallprint .text-center ul li a {
+          color: white;
+          text-decoration: none; }
+          footer .site-smallprint .text-center ul li a:hover {
+            text-decoration: underline; }
+        footer .site-smallprint .text-center ul li:last-child {
+          border-right: none;
+          margin-right: 0;
+          padding-right: 0; }

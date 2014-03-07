@@ -165,6 +165,7 @@ function ninja_forms_become_a_member() {
 		    update_user_meta($user_id, 'member_country', $ninja_forms_processing->get_field_value( 28 ));
 		    update_user_meta($user_id, 'member_telephone', $ninja_forms_processing->get_field_value( 29 ));
 		    update_user_meta($user_id, 'member_fax', $ninja_forms_processing->get_field_value( 30 ));
+		    update_user_meta($user_id, 'member_employees', $ninja_forms_processing->get_field_value( 16 ));
 		    
 		    if($ninja_forms_processing->get_field_value( 14 ) !== 'Please choose a Full Member') {
 		    	update_user_meta($user_id, 'member_business_type', $ninja_forms_processing->get_field_value( 14 ));
@@ -173,8 +174,8 @@ function ninja_forms_become_a_member() {
 		    }
 
 
-		    //$test = $all_fields[16];
-		    //$user_value = $ninja_forms_processing->get_field_value( $test );
+		    // $test = $all_fields[16];
+		    // $user_value = $ninja_forms_processing->get_field_value( $test );
 		    //var_dump($test);
 		    //update_user_meta($user_id, 'member_employees', $test);
 
