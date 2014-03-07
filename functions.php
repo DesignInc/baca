@@ -21,12 +21,17 @@ add_action( 'after_setup_theme', 'baca_setup' );
 function baca_scripts() {
 	wp_enqueue_style( 'baca-style', get_stylesheet_uri(), array(), '20131009' );
 
-	wp_enqueue_script( 'fonts_dot_com', 'http://fast.fonts.net/jsapi/3cf3f30d-9241-4318-b6a0-0d9eded79e0a.js' );
+	wp_enqueue_script( 'jquery' );
 
-	wp_enqueue_script( 'forms', get_template_directory_uri() . '/js/register.js', array(), '1.0', true );
+	wp_enqueue_script( 'baca_js', get_template_directory_uri() . '/js/baca.js', array(), '1.0', true );
+
+	wp_enqueue_script( 'list_js', 'http://listjs.com/no-cdn/list.js', array(), '1.0', true );
+
+	wp_enqueue_script( 'list_pag_js', 'http://listjs.com/no-cdn/list.pagination.js', array(), '1.0', true );
+
+	wp_enqueue_script( 'fonts_dot_com', 'http://fast.fonts.net/jsapi/3cf3f30d-9241-4318-b6a0-0d9eded79e0a.js' );
 }
 add_action( 'wp_enqueue_scripts', 'baca_scripts' );
-
 // Custom Login
 function baca_custom_login() {
     echo header("Location: " . get_permalink(69));

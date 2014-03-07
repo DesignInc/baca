@@ -9,20 +9,7 @@
   <link href="http://gmpg.org/xfn/11" rel="profile">
   <link href="<?php bloginfo( 'pingback_url' ); ?>" rel="pingback">
   <link href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" rel="shortcut icon">
-  
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>  
-  <script src="http://listjs.com/no-cdn/list.js"></script>
-  <script src="http://listjs.com/no-cdn/list.pagination.js"></script>
 
-  <script type="text/javascript">
-      // first, create the object that contains
-      // configuration variables
-      MTIConfig = {};
-  
-      // next, add a variable that will control
-      // whether or not FOUT will be prevented
-      MTIConfig.EnableCustomFOUTHandler = true // true = prevent FOUT
-  </script>
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>

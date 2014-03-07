@@ -51,15 +51,6 @@
 </div>
 <!-- #page -->
 
-<script type="text/javascript">
-jQuery(document).ready(function() {
-  var monkeyList = new List('members-list', {
-    valueNames: ['name'],
-    page: 16,
-    plugins: [ ListPagination({}) ]
-  });
-});
-</script>
 
 <?php wp_footer(); ?>
 </body>
