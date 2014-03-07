@@ -443,10 +443,15 @@ section#page-title {
 	}
 }
 
+
+//---------------[ Events ]
 #tribe-events-pg-template {
 	background-color: white;
 	padding: 30px;
 	@include border-bottom-radius(20px);
+	.tribe-events-content p, a.tribe-events-read-more {
+		font-size: 1.2em;
+	}
 }
 
 #page-content {
@@ -739,6 +744,21 @@ section#page-title {
 				padding: 5px 0;
 			}
 		}
+		.woocommerce {
+			h2 {
+				font-size: 1.8em;
+				margin-right: 20px;
+			}
+			td {
+				padding: 5px
+			}
+			.cart_totals table {
+				span {
+					float: right;
+					margin-right: 30px;
+				}
+			}
+		}
 	}
 }
 
@@ -770,6 +790,9 @@ section#page-title {
 			input[type=text]:focus {
 				color: #000;
 			}
+			label {
+				font-size: 1.4em;
+			}
 			p {
 				font-weight: normal;
 				margin: 0;
@@ -777,6 +800,7 @@ section#page-title {
 			.list-radio-wrap {
 				clear: both;
 				float: left;
+				width: 600px;
 				ul {
 					clear: both;
 					margin: 0;
@@ -799,25 +823,31 @@ section#page-title {
 				border: 1px solid $baca-light-grey;
 			}
 			input.textfield-left {
-				width: 450px;
+				width: 444px;
 				padding: 6px;
 				margin-right: 10px;
 				float: left;
 			}
 			input.textfield-right {
-				width: 450px;
+				width: 444px;
 				padding: 6px;
 				margin: 0;
 				float: right;
 			}
-			input.textfield-long, div.text {
-				width: 923px;
+			input.textfield-long {
+				width: 911px;
 				padding: 6px;
 				margin: 0;
 				float: left;
 			}
+			div.text {
+				width: 911px;
+				padding: 6px 0;
+				margin: 0;
+				float: left;
+			}
 			textarea {
-				width: 916px;
+				width: 910px;
 				padding: 6px;
 				margin: 0 10px 8px 0;
 				clear: both;
@@ -832,8 +862,15 @@ section#page-title {
 				background-color: #fff;
 				clear: both;
 			}
+			.drop-down1, .drop-down2 {
+				clear: both;
+			}
 			.ninja-forms-field-error {
 				color: red;
+				clear: both;
+			}
+			.ninja-forms-success-msg {
+				color: blue;
 				clear: both;
 			}
 		}

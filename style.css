@@ -504,6 +504,9 @@ section#page-title h2 {
   -webkit-border-bottom-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
+#tribe-events-pg-template .tribe-events-content p, #tribe-events-pg-template a.tribe-events-read-more {
+  font-size: 1.2em;
+}
 
 #page-content {
   width: 1000px;
@@ -793,6 +796,17 @@ section#page-title h2 {
 #full-width #content-container table td, #registration-page #content-container table td {
   padding: 5px 0;
 }
+#full-width #content-container .woocommerce h2, #registration-page #content-container .woocommerce h2 {
+  font-size: 1.8em;
+  margin-right: 20px;
+}
+#full-width #content-container .woocommerce td, #registration-page #content-container .woocommerce td {
+  padding: 5px;
+}
+#full-width #content-container .woocommerce .cart_totals table span, #registration-page #content-container .woocommerce .cart_totals table span {
+  float: right;
+  margin-right: 30px;
+}
 
 #full-width {
   padding-bottom: 30px;
@@ -825,6 +839,9 @@ section#page-title h2 {
 #full-width #content-container form input[type=text]:focus {
   color: #000;
 }
+#full-width #content-container form label {
+  font-size: 1.4em;
+}
 #full-width #content-container form p {
   font-weight: normal;
   margin: 0;
@@ -832,6 +849,7 @@ section#page-title h2 {
 #full-width #content-container form .list-radio-wrap {
   clear: both;
   float: left;
+  width: 600px;
 }
 #full-width #content-container form .list-radio-wrap ul {
   clear: both;
@@ -854,25 +872,31 @@ section#page-title h2 {
   border: 1px solid #c6c6c5;
 }
 #full-width #content-container form input.textfield-left {
-  width: 450px;
+  width: 444px;
   padding: 6px;
   margin-right: 10px;
   float: left;
 }
 #full-width #content-container form input.textfield-right {
-  width: 450px;
+  width: 444px;
   padding: 6px;
   margin: 0;
   float: right;
 }
-#full-width #content-container form input.textfield-long, #full-width #content-container form div.text {
-  width: 923px;
+#full-width #content-container form input.textfield-long {
+  width: 911px;
   padding: 6px;
   margin: 0;
   float: left;
 }
+#full-width #content-container form div.text {
+  width: 911px;
+  padding: 6px 0;
+  margin: 0;
+  float: left;
+}
 #full-width #content-container form textarea {
-  width: 916px;
+  width: 910px;
   padding: 6px;
   margin: 0 10px 8px 0;
   clear: both;
@@ -887,8 +911,15 @@ section#page-title h2 {
   background-color: #fff;
   clear: both;
 }
+#full-width #content-container form .drop-down1, #full-width #content-container form .drop-down2 {
+  clear: both;
+}
 #full-width #content-container form .ninja-forms-field-error {
   color: red;
+  clear: both;
+}
+#full-width #content-container form .ninja-forms-success-msg {
+  color: blue;
   clear: both;
 }
 #full-width #content-container .ninja-forms-error-msg {

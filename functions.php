@@ -134,9 +134,11 @@ function ninja_forms_become_a_member() {
 
 	if( is_array( $all_fields ) ) { //Make sure $all_fields is an array.
 
+		$password = wp_generate_password( 12, false );
+
 		$new_user = array(
 	    	'user_login' => trim(strtolower(str_replace(" ", "", $all_fields[6]))),
-	    	'user_pass' => wp_generate_password( 12, false ),
+	    	'user_pass' => $password, 
 	        'first_name' => $all_fields[6],
 	        'display_name' => $all_fields[6],
 	        'nickname' => $all_fields[6],
@@ -158,10 +160,13 @@ function ninja_forms_become_a_member() {
 		    update_user_meta($user_id, 'member_country', $ninja_forms_processing->get_field_value( 28 ));
 		    update_user_meta($user_id, 'member_telephone', $ninja_forms_processing->get_field_value( 29 ));
 		    update_user_meta($user_id, 'member_fax', $ninja_forms_processing->get_field_value( 30 ));
-
-		    update_user_meta($user_id, 'member_business_type', $ninja_forms_processing->get_field_value( 14 ));
-
 		    
+		    if($ninja_forms_processing->get_field_value( 14 ) !== 'Please choose a Full Member') {
+		    	update_user_meta($user_id, 'member_business_type', $ninja_forms_processing->get_field_value( 14 ));
+		    } elseif($ninja_forms_processing->get_field_value( 15 ) !== 'Please choose an Associated Member') {
+		    	update_user_meta($user_id, 'member_business_type', $ninja_forms_processing->get_field_value( 15 ));
+		    }
+
 
 		    //$test = $all_fields[16];
 		    //$user_value = $ninja_forms_processing->get_field_value( $test );
@@ -169,10 +174,18 @@ function ninja_forms_become_a_member() {
 		    //update_user_meta($user_id, 'member_employees', $test);
 
 
-
 		    update_user_meta($user_id, 'member_trading', $ninja_forms_processing->get_field_value( 51 ));
-		    //update_user_meta($user_id, 'member_date_ceased', $ninja_forms_processing->get_field_value(  ));
-		    //update_user_meta($user_id, 'member_comments', $ninja_forms_processing->get_field_value(  ));
+
+		    update_user_meta($user_id, 'additional_email_1', $ninja_forms_processing->get_field_value( 55 ));
+		    update_user_meta($user_id, 'additional_email_2', $ninja_forms_processing->get_field_value( 56 ));
+		    update_user_meta($user_id, 'additional_email_3', $ninja_forms_processing->get_field_value( 57 ));
+
+		    update_user_meta($user_id, 'member_representative', $ninja_forms_processing->get_field_value( 66 ));
+
+		    update_user_meta($user_id, 'proposer_rep_name', $ninja_forms_processing->get_field_value( 69 ));
+		    update_user_meta($user_id, 'proposer_rep_category', $ninja_forms_processing->get_field_value( 70 ));
+		    update_user_meta($user_id, 'seconder_rep_name', $ninja_forms_processing->get_field_value( 71 ));
+		    update_user_meta($user_id, 'seconder_rep_category', $ninja_forms_processing->get_field_value( 72 ));
 
 		    $field_key = "field_52f4fedbcdb79";
 	        $user_id = "user_" . $user_id;
@@ -206,9 +219,11 @@ function add_members() {
 
 	foreach($results as $row) :
 
+		$password = wp_generate_password( 12, false );
+
 		$new_user = array(
 	    'user_login' => trim(strtolower(str_replace(" ", "", $row->CompanyName))),
-        'user_pass' => wp_generate_password( 12, false ),
+        'user_pass' => $password,
         'first_name' => $row->CompanyName,
         'display_name' => $row->CompanyName,
         'nickname' => $row->CompanyName,
