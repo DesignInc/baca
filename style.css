@@ -798,10 +798,13 @@ section#page-title h2 {
 }
 #full-width #content-container .woocommerce h2, #registration-page #content-container .woocommerce h2 {
   font-size: 1.8em;
-  margin-right: 20px;
+  margin: 5px 20px 0 0;
 }
-#full-width #content-container .woocommerce td, #registration-page #content-container .woocommerce td {
+#full-width #content-container .woocommerce .cart_totals table td, #registration-page #content-container .woocommerce .cart_totals table td {
   padding: 5px;
+}
+#full-width #content-container .woocommerce .cart_totals table td, #full-width #content-container .woocommerce .cart_totals table th, #registration-page #content-container .woocommerce .cart_totals table td, #registration-page #content-container .woocommerce .cart_totals table th {
+  width: 50%;
 }
 #full-width #content-container .woocommerce .cart_totals table span, #registration-page #content-container .woocommerce .cart_totals table span {
   float: right;

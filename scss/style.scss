@@ -744,15 +744,18 @@ section#page-title {
 				padding: 5px 0;
 			}
 		}
-		.woocommerce {
+		.woocommerce { //changes
 			h2 {
 				font-size: 1.8em;
-				margin-right: 20px;
-			}
-			td {
-				padding: 5px
+				margin: 5px 20px 0 0;
 			}
 			.cart_totals table {
+				td {
+					padding: 5px
+				}
+				td, th {
+					width: 50%;
+				}
 				span {
 					float: right;
 					margin-right: 30px;
