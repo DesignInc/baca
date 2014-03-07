@@ -1,5 +1,5 @@
 // hide/show dropdowns for 'principal aviation activity' in 'Become a member' form
-$(document).ready(function(){
+jQuery(document).ready(function(){
 	jQuery(".drop-down1, .drop-down2, .drop-down3, .drop-down4").hide();
 	jQuery('#ninja_forms_form_2').change(function() {
 	    if (jQuery('#ninja_forms_field_53_0').attr('checked')) {
