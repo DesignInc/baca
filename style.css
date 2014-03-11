@@ -655,6 +655,57 @@ section#page-title {
     #full-width #content-container .woocommerce .cart_totals table span, #registration-page #content-container .woocommerce .cart_totals table span {
       float: right;
       margin-right: 30px; }
+  #full-width #terms_container.active, #registration-page #terms_container.active {
+    display: block; }
+  #full-width #terms_container, #registration-page #terms_container {
+    position: fixed;
+    display: none;
+    width: 500px;
+    height: 500px;
+    background: white;
+    margin-left: -254px;
+    left: 50%;
+    top: 100px;
+    padding: 20px;
+    border: 4px solid #ffdc00;
+    box-shadow: 0px 0px 10px #999;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px; }
+    #full-width #terms_container #terms_copy, #registration-page #terms_container #terms_copy {
+      width: 480px;
+      position: relative;
+      height: 425px;
+      border: 1px solid #eee;
+      overflow: auto;
+      padding: 1em; }
+    #full-width #terms_container #terms_instruction, #registration-page #terms_container #terms_instruction {
+      position: absolute;
+      opacity: 0;
+      bottom: 1.4em;
+      left: 8em;
+      font-size: 1.4em;
+      transition: opacity, 400ms;
+      font-weight: bold; }
+    #full-width #terms_container #terms_instruction.remind, #registration-page #terms_container #terms_instruction.remind {
+      opacity: 1; }
+    #full-width #terms_container #terms_agree.button, #registration-page #terms_container #terms_agree.button {
+      position: absolute;
+      bottom: 1em;
+      background: #999;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      color: #333;
+      padding: 1em;
+      font-weight: bold;
+      font-size: 1.2em;
+      cursor: pointer;
+      transition: box-shadow 300ms; }
+    #full-width #terms_container #terms_agree.button.active, #registration-page #terms_container #terms_agree.button.active {
+      background: #ffdc00; }
+    #full-width #terms_container .button:hover, #registration-page #terms_container .button:hover {
+      box-shadow: 0px 0px 5px #999; }
 
 #full-width {
   padding-bottom: 30px;

@@ -5,6 +5,8 @@ Template Name: Full width
 
 get_header(); ?>
 
+
+
 <div class="content-area" id="primary">
   <div class="site-content" id="content" role="main">
     <?php if(have_posts()) : ?>
@@ -20,6 +22,21 @@ get_header(); ?>
         <?php the_content(); ?>
         
       </div>
+
+      <?php if(is_page(437)) : ?>
+
+        <div id="terms_container">
+          <div id="terms_copy">
+            <?php 
+            if (get_field('terms_and_conditions')) :
+              the_field('terms_and_conditions');
+            endif; ?>
+          </div>
+          <a id="terms_agree" class="button">Agree</a>
+          <div id="terms_instruction">Please read all terms and conditions before agreeing.</div>
+        </div>
+
+      <?php endif; ?>
 
       <?php endwhile; ?>
       <?php endif; ?>
