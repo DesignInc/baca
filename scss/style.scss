@@ -22,6 +22,7 @@ $baca-grey: #575756;
 $baca-light-grey: #c6c6c5;
 $baca-black: #1d1d1b;
 $baca-blue: #211554;
+$baca-events-blue: #1758BB;
 $baca-yellow: #ffdc00;
 $baca-dark-blue: #1a1259;
 $baca-text-grey: #567482;
@@ -67,7 +68,7 @@ body {
 	width: 1000px;
 }
 
-input {
+input, select {
 	padding: 5px;
 	border: 1px solid $baca-grey;
 	border-radius: 2px;
@@ -419,6 +420,37 @@ section#home-title {
 
 
 
+//---------------[ Events ]
+#tribe-events-pg-template {
+	background-color: white;
+	padding: 30px;
+	@include border-bottom-radius(20px);
+	#tribe-events-content {
+		font-size: 1.4em;
+		p {
+			margin: 0 0 5px;
+		}
+		h2 {
+			font-size: 1.8em;
+		}
+		a, a:visited {
+			color: $baca-events-blue;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		.tribe-events-back {
+			margin-bottom: 15px;
+		}
+		.tickets_price {
+			font-size: 1.6em;
+			font-style: normal;
+		}
+	}
+}
+
+
+
 //---------------[ Page ]
 section#page-title {
 	background-repeat: no-repeat;
@@ -440,17 +472,6 @@ section#page-title {
 		color: white;
 		font-size: 3em;
 		font-family: $proxima-reg;
-	}
-}
-
-
-//---------------[ Events ]
-#tribe-events-pg-template {
-	background-color: white;
-	padding: 30px;
-	@include border-bottom-radius(20px);
-	.tribe-events-content p, a.tribe-events-read-more {
-		font-size: 1.2em;
 	}
 }
 
@@ -612,8 +633,8 @@ section#page-title {
 		section.blog-item {
 			margin-bottom: 30px;
 			h1 {
-				font-size: 2.4em;
-				font-family: $proxima-bold;
+				font-size: 2.2em;
+				font-family: $proxima-reg;
 				margin-bottom: 8px;
 				a {
 					color: $baca-blue;
@@ -630,6 +651,9 @@ section#page-title {
 			}
 			p {
 				margin-bottom: 5px;
+				a {
+					font-family: $proxima-reg;
+				}
 			}
 		}
 		.commentlist {
@@ -744,22 +768,61 @@ section#page-title {
 				padding: 5px 0;
 			}
 		}
-		.woocommerce { //changes
+		.woocommerce { 
 			h2 {
 				font-size: 1.8em;
 				margin: 5px 20px 0 0;
 			}
+			a, a:visited {
+				color: $baca-events-blue;
+			}
+			td {
+				padding: 5px;
+			}
+			.coupon input.input-text {
+				width: 110px;
+			}
 			.cart_totals table {
-				td {
-					padding: 5px
+				width: 300px;
+				td{
+					width: 40%;
 				}
-				td, th {
-					width: 50%;
+				th {
+					width: 60%;
 				}
 				span {
 					float: right;
-					margin-right: 30px;
+					margin-right: 20px;
 				}
+			}
+			#customer_details {
+				margin-bottom: 20px;
+				label {
+					font-size: 1em;
+				}
+				textarea {
+					width: 100%;
+					height: 174px;
+				}
+			}
+			#payment ul, ul.order_details {
+				list-style: none;
+			}
+			dl.customer_details {
+				clear:both;
+				margin-bottom: 10px;
+				dd {
+					margin-bottom: 10px;
+				}
+				dt, dd {
+					font-size: 1.6em;
+				}
+			}
+			p.myaccount_address{
+				clear:both;
+			}
+			address, .woocommerce-info {
+				font-size: 1.2em;
 			}
 		}
 	}
@@ -822,19 +885,15 @@ section#page-title {
 			}
 			.textfield-left-wrap {
 				width: 440px;
-				padding: 6px;
-				margin-right: 10px;
+				margin-right: 31px;
 				float: left;
 				clear: left;
-				margin-right:4px;
 			}
 			.textfield-right-wrap {
 				width: 440px;
-				padding: 6px;
 				margin: 0;
 				float: left;
 				clear: right;
-				margin-left: 4px;
 			}
 			select.ninja-forms-field {
 				width: 446px;
@@ -1039,6 +1098,7 @@ section#page-title {
 		margin-bottom: 20px;
 		input[type=text] {
 			height: 18px;
+			width: 142px;
 		}
 	}
 }

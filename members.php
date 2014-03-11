@@ -109,7 +109,7 @@ get_header(); ?>
               }
               else {
                 $args = array(
-                    'role' => 'subscriber',
+                    'role' => 'Subscriber',
                     'order' => 'ASC',
                 );
               }
@@ -118,7 +118,13 @@ get_header(); ?>
 
               if ( !empty( $user_query->results ) ) {
                   foreach ( $user_query->results as $user ) {
-                    echo '<li><p class="name"><a href="' . get_bloginfo('url') . '/author/' . $user->user_login . '" rel="bookmark" title="' . $user->display_name . '">' . $user->display_name . '</a></p></li>';
+                    echo '<li><p class="name">';
+                    if(is_user_logged_in()) {
+                      echo '<a href="' . get_bloginfo('url') . '/author/' . $user->user_login . '" rel="bookmark" title="' . $user->display_name . '">';
+                    }
+                    echo $user->display_name;
+                    if(is_user_logged_in()) { echo '</a>'; }
+                    echo '</p></li>';
                   }
               } else {
                   echo '<li>No users have been found.</li>';
@@ -128,6 +134,7 @@ get_header(); ?>
               foreach ($_POST as $key => $value) {
                 $key.' : '. $value.'<br />';
               }
+
               ?> 
           </ul>
         </div>

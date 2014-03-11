@@ -10,7 +10,7 @@
     <?php wp_list_pages( array( 'title_li' => __('About us'), 'child_of' => 8 ) ); ?>
   </div>
   <div class='site-info'>
-    <?php wp_list_pages( array( 'title_li' => __('Services'), 'child_of' => 16 ) ); ?>
+    <?php wp_list_pages( array( 'title_li' => __('Services'), 'child_of' => 16, 'exclude' => 495 ) ); ?>
   </div>
   <div class='site-info'>
     <?php wp_list_pages( array( 'title_li' => __('Policy'), 'child_of' => 188 ) ); ?>

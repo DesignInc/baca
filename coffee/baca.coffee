@@ -5,7 +5,7 @@ jQuery ($) ->
 	
 	monkeyList = new List("members-list",
 		valueNames: ["name"]
-		page: 16
+		page: 300
 		plugins: [ListPagination({})]
 		)
 	

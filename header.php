@@ -3,9 +3,7 @@
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta content="width=device-width" name="viewport">
-  <title>
-    <?php wp_title( '|', true, 'right' ); ?>
-  </title>
+  <title><?php wp_title(''); ?></title>
   <link href="http://gmpg.org/xfn/11" rel="profile">
   <link href="<?php bloginfo( 'pingback_url' ); ?>" rel="pingback">
   <link href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" rel="shortcut icon">

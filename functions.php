@@ -86,6 +86,18 @@ function baca_custom_post_types() {
 }
 add_action( 'init', 'baca_custom_post_types' );
 
+// Format the title meta
+add_filter( 'wp_title', 'baw_hack_wp_title_for_home' );
+function baw_hack_wp_title_for_home( $title )
+{
+  if( empty( $title ) && ( is_home() || is_front_page() ) ) {
+    return __( 'Home', 'theme_domain' ) . ' | ' . get_bloginfo( 'description' );
+  } else {
+  	return get_the_title() . ' | ' . get_bloginfo( 'description' );
+  }
+  return $title;
+}
+
 // Add 'http://' before web address 
 function addhttp($url) {
 	if (!preg_match("~^(?:f|ht)tps?://~i", $url)) {
@@ -109,15 +121,27 @@ function SearchFilter($query) {
 }
 add_filter('pre_get_posts','SearchFilter');
 
+// Remove unnecessary fields from billing form
+add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
+function custom_override_checkout_fields( $fields ) {
+     unset($fields['billing']['billing_address_1']);
+     unset($fields['billing']['billing_address_2']);
+     unset($fields['billing']['billing_city']);
+     unset($fields['billing']['billing_postcode']);
+     unset($fields['billing']['billing_state']);
+     unset($fields['billing']['billing_country']);
+     return $fields;
+}
+
 // Remove extra social media fields from Users
-function add_twitter_contactmethod( $contactmethods ) {
+function remove_contactmethods( $contactmethods ) {
 	unset($contactmethods['aim']);
 	unset($contactmethods['jabber']);
 	unset($contactmethods['yim']);
 	//unset($contactmethods['last_name']);
 	return $contactmethods;
 }
-add_filter('user_contactmethods','add_twitter_contactmethod', 10, 1);
+add_filter('user_contactmethods','remove_contactmethods', 10, 1);
 // Remove color schemes from Users
 function admin_del_options() {
 	global $_wp_admin_css_colors;
@@ -173,13 +197,6 @@ function ninja_forms_become_a_member() {
 		    	update_user_meta($user_id, 'member_business_type', $ninja_forms_processing->get_field_value( 15 ));
 		    }
 
-
-		    // $test = $all_fields[16];
-		    // $user_value = $ninja_forms_processing->get_field_value( $test );
-		    //var_dump($test);
-		    //update_user_meta($user_id, 'member_employees', $test);
-
-
 		    update_user_meta($user_id, 'member_trading', $ninja_forms_processing->get_field_value( 51 ));
 
 		    update_user_meta($user_id, 'additional_email_1', $ninja_forms_processing->get_field_value( 55 ));
@@ -214,6 +231,25 @@ function ninja_forms_become_a_member() {
 		    );
 		    update_field( $field_key, $value, $user_id );
 
+		    //wp_new_user_notification( $user_id, $password );
+
+		    $to = $all_fields[31];
+	        $headers[] = "From: Designinc <christopher@designinc.co.uk>";
+	        //$headers[] = "Cc: jon@designinc.co.uk, frank@designinc.co.uk";
+	        $subject = "BACA Login details";
+	        
+	        $message = "Please find your login details below. You will not be able to login to the website until your application has been approved.\r\n\r\n";
+	        $message .= "Username: " . trim(strtolower(str_replace(" ", "", $all_fields[6]))) . "\r\n";
+	        $message .= "Password: " . $password;
+
+			add_filter( 'wp_mail_content_type', 'set_html_content_type' );
+			wp_mail( $to, $subject, $message, $headers );
+			remove_filter( 'wp_mail_content_type', 'set_html_content_type' );
+
+			function set_html_content_type() {
+			    return 'text/html';
+			} 
+
 		endif;
 	}
 }
@@ -221,7 +257,7 @@ function ninja_forms_become_a_member() {
 
 function add_members() {
 	global $wpdb;
-	$results = $wpdb->get_results( "SELECT * FROM members" ); 
+	$results = $wpdb->get_results( "SELECT * FROM members WHERE ID >= 351 AND ID <= 361" ); 
 
 	foreach($results as $row) :
 
@@ -242,59 +278,56 @@ function add_members() {
 
 	    if($user_id) :
 
-	    update_user_meta($user_id, 'member_address_1', $row->Address1);
-	    update_user_meta($user_id, 'member_address_2', $row->Address2);
-	    update_user_meta($user_id, 'member_address_3', $row->Address3);
-	    update_user_meta($user_id, 'member_address_4', $row->Address4);
-	    update_user_meta($user_id, 'member_town', $row->Town);
-	    update_user_meta($user_id, 'member_county', $row->County);
-	    update_user_meta($user_id, 'member_postcode', $row->PostCode);
-	    update_user_meta($user_id, 'member_country', $row->Country);
-	    update_user_meta($user_id, 'member_telephone', $row->Telephone);
-	    update_user_meta($user_id, 'member_fax', $row->Fax);
-	    update_user_meta($user_id, 'member_business_type', $row->BusinessType);
-	    update_user_meta($user_id, 'member_sita', $row->Sita);
-	    update_user_meta($user_id, 'member_date_elected', $row->DateElected);
-	    update_user_meta($user_id, 'member_year_elected', $row->YearElected);
-	    update_user_meta($user_id, 'member_date_ceased', $row->DateCeased);
-	    update_user_meta($user_id, 'member_comments', $row->Comments);
+		    update_user_meta($user_id, 'member_address_1', $row->Address1);
+		    update_user_meta($user_id, 'member_address_2', $row->Address2);
+		    update_user_meta($user_id, 'member_address_3', $row->Address3);
+		    update_user_meta($user_id, 'member_address_4', $row->Address4);
+		    update_user_meta($user_id, 'member_town', $row->Town);
+		    update_user_meta($user_id, 'member_county', $row->County);
+		    update_user_meta($user_id, 'member_postcode', $row->PostCode);
+		    update_user_meta($user_id, 'member_country', $row->Country);
+		    update_user_meta($user_id, 'member_telephone', $row->Telephone);
+		    update_user_meta($user_id, 'member_fax', $row->Fax);
+		    update_user_meta($user_id, 'member_business_type', $row->BusinessType);
+		    update_user_meta($user_id, 'member_sita', $row->Sita);
+		    update_user_meta($user_id, 'member_date_elected', $row->DateElected);
+		    update_user_meta($user_id, 'member_year_elected', $row->YearElected);
+		    update_user_meta($user_id, 'member_date_ceased', $row->DateCeased);
+		    update_user_meta($user_id, 'member_comments', $row->Comments);
 
-	    $field_key = "field_52f4fedbcdb79";
-	    $user_id = "user_" . $user_id;
-	    $value = get_field($field_key, $user_id);
-	    $value[] = array(
-	        "more_contacts_name" => $row->ContactName, 
-	        "more_contacts_email" => $row->ContactEmail,
-	        "more_contacts_mobile" => $row->ContactMobile
-	    );
-	    $value[] = array(
-	        "more_contacts_name" => $row->ContactName2, 
-	        "more_contacts_email" => $row->ContactEmail2,
-	        "more_contacts_mobile" => $row->ContactMobile2
-	    );
-	    $value[] = array(
-	        "more_contacts_name" => $row->ContactName3, 
-	        "more_contacts_email" => $row->ContactEmail3
-	    );
-	    update_field( $field_key, $value, $user_id );
+		    $field_key = "field_52f4fedbcdb79";
+		    $user_id = "user_" . $user_id;
+		    $value = get_field($field_key, $user_id);
+		    $value[] = array(
+		        "more_contacts_name" => $row->ContactName, 
+		        "more_contacts_email" => $row->ContactEmail,
+		        "more_contacts_mobile" => $row->ContactMobile
+		    );
+		    $value[] = array(
+		        "more_contacts_name" => $row->ContactName2, 
+		        "more_contacts_email" => $row->ContactEmail2,
+		        "more_contacts_mobile" => $row->ContactMobile2
+		    );
+		    $value[] = array(
+		        "more_contacts_name" => $row->ContactName3, 
+		        "more_contacts_email" => $row->ContactEmail3
+		    );
+		    update_field( $field_key, $value, $user_id );
 
-	    //wp_new_user_notification( $user_id, $new_user->user_pass );
+		    /*echo $row->CompanyName . '<br />';
+		    echo trim(strtolower(str_replace(" ", "", $row->CompanyName))) . '<br />';
+        	echo $password;
+        	echo '<br /><br />';*/
 
-	    /*$to = array('gracetopher@hotmail.co.uk');
-        $headers[] = 'From: Designinc <christopher@designinc.co.uk>';
-        //$headers[] = 'Cc: jon@designinc.co.uk, frank@designinc.co.uk';
-        $subject = 'Test';
-        
-        $message = 'Username: ' . $new_user->user_login . '<br />';
-        $message .= 'Password: ' . $new_user->user_pass;
-
-		add_filter( 'wp_mail_content_type', 'set_html_content_type' );
-		wp_mail( $to, $subject, $message, $headers );
-		remove_filter( 'wp_mail_content_type', 'set_html_content_type' );
-
-		function set_html_content_type() {
-		    return 'text/html';
-		} */
+			$sql = $wpdb->update(
+		        'members',
+		        array(
+		            'password' => $password ),
+		        array(
+		            'CompanyName' => $row->CompanyName ),
+		        array( '%s' )
+		    );
+		    $wpdb->query($sql);
 
 	    endif;
 

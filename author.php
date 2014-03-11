@@ -14,7 +14,7 @@
         
         <div id="left-side">
 
-        <?php $user = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author)); ?>
+          <?php $user = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author)); ?>
         
           <h2><?php echo $user->display_name; ?></h2>
           
@@ -29,24 +29,26 @@
             <?php if ($user->member_country != '') : echo $user->member_country . '<br />'; else: echo NULL; endif;?>
           </p>
 
-          <p>
-            <?php if ($user->member_telephone != '') : echo 'T: ' . $user->member_telephone . '<br />'; else: echo NULL; endif;?>
-            <?php if ($user->member_fax != '') : echo 'F: ' . $user->member_fax . '<br />'; else: echo NULL; endif;?>
-            <?php if ($user->user_email != '') : echo 'E: <a href="mailto:' . $user->user_email . '">' . $user->user_email . '</a><br />'; else: echo NULL; endif;?>
-          </p>
+          <?php if( is_user_logged_in() ): ?>
+            <p>
+              <?php if ($user->member_telephone != '') : echo 'T: ' . $user->member_telephone . '<br />'; else: echo NULL; endif;?>
+              <?php if ($user->member_fax != '') : echo 'F: ' . $user->member_fax . '<br />'; else: echo NULL; endif;?>
+              <?php if ($user->user_email != '') : echo 'E: <a href="mailto:' . $user->user_email . '">' . $user->user_email . '</a><br />'; else: echo NULL; endif;?>
+            </p>
 
-          <?php 
-          $rows = get_field('more_contacts', $user);
-          if($rows) : 
-            foreach($rows as $row) :
-              echo '<p>';
-              if($row['more_contacts_name']) : echo $row['more_contacts_name'] . '<br />'; endif;
-              if($row['more_contacts_position']) : echo $row['more_contacts_position'] . '<br />'; endif;
-              if($row['more_contacts_email']) : echo '<a href="mailto:' . $row['more_contacts_email'] . '">' . $row['more_contacts_email'] . '</a><br />'; endif;
-              if($row['more_contacts_mobile']) : echo $row['more_contacts_mobile'] . '<br />'; endif;
-              echo '</p>';
-            endforeach;
-          endif; ?>
+            <?php 
+            $rows = get_field('more_contacts', $user);
+            if($rows) : 
+              foreach($rows as $row) :
+                echo '<p>';
+                if($row['more_contacts_name']) : echo $row['more_contacts_name'] . '<br />'; endif;
+                if($row['more_contacts_position']) : echo $row['more_contacts_position'] . '<br />'; endif;
+                if($row['more_contacts_email']) : echo '<a href="mailto:' . $row['more_contacts_email'] . '">' . $row['more_contacts_email'] . '</a><br />'; endif;
+                if($row['more_contacts_mobile']) : echo $row['more_contacts_mobile'] . '<br />'; endif;
+                echo '</p>';
+              endforeach;
+            endif; ?>
+          <?php endif; // END is_user_logged_in ?>
 
         </div>
 
@@ -77,25 +79,27 @@
           
           <div class="clear"></div>
           <p>
-          <?php
-            if($user->member_twitter_url != '') : 
-            $url = get_field( 'member_twitter_url', $user );
-            $url = addhttp($url); ?>
-            <a class="social" href="<?php echo $url; ?>" target="_blank"><i class="genericond genericon genericon-twitter"></i></a>
-          <?php endif; ?>
-          <?php
-            if($user->member_facebook_url != '') : 
-            $url = get_field( 'member_facebook_url', $user );
-            $url = addhttp($url); ?>
-            <a class="social" href="<?php echo $url; ?>" target="_blank"><i class="genericond genericon genericon-facebook"></i></a>
-          <?php endif; ?>
-          <?php
-            if($user->member_linkedin_url != '') : 
-            $url = get_field( 'member_linkedin_url', $user );
-            $url = addhttp($url); ?>
-            <a class="social" href="<?php echo $url; ?>" target="_blank"><i class="genericond genericon genericon-linkedin-alt"></i></a>
-          <?php endif; ?>
+            <?php if($user->member_twitter_url != '') : 
+              $url = get_field( 'member_twitter_url', $user );
+              $url = addhttp($url); ?>
+              <a class="social" href="<?php echo $url; ?>" target="_blank"><i class="genericond genericon genericon-twitter"></i></a>
+            <?php endif; ?>
+            <?php if($user->member_facebook_url != '') : 
+              $url = get_field( 'member_facebook_url', $user );
+              $url = addhttp($url); ?>
+              <a class="social" href="<?php echo $url; ?>" target="_blank"><i class="genericond genericon genericon-facebook"></i></a>
+            <?php endif; ?>
+            <?php if($user->member_linkedin_url != '') : 
+              $url = get_field( 'member_linkedin_url', $user );
+              $url = addhttp($url); ?>
+              <a class="social" href="<?php echo $url; ?>" target="_blank"><i class="genericond genericon genericon-linkedin-alt"></i></a>
+            <?php endif; ?>
           </p>
+
+          <?php if( is_user_logged_in() ): ?>
+            <p style="float:right;"><a href="<?php bloginfo('url'); ?>/membership-renewals/">Renew your membership</a></p>
+          <?php endif; // END is_user_logged_in ?>
+
         </div>
 
       </div>
