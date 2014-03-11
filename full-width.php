@@ -23,7 +23,7 @@ get_header(); ?>
         
       </div>
 
-      <?php if(is_page(437)) : ?>
+      <?php if(is_page(437) || is_page(827)) : ?>
 
         <div id="terms_container">
           <div id="terms_copy">

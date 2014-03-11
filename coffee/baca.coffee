@@ -58,11 +58,11 @@ jQuery ($) ->
 	        $('.drop-down4').show()
 	        $('.drop-down3').hide()
 	    
-	$("#ninja_forms_field_64").click (e)->
+	$("#ninja_forms_field_64, #ninja_forms_field_131").click (e)->
 		e.preventDefault()
 		$("#terms_container").addClass("active")
 		$("body").addClass("fixed")
-		
+
 		termsCopy = $('#terms_copy')
 		termsCopy.scroll ->
 			if (termsCopy.innerHeight() == termsCopy.prop('scrollHeight') - termsCopy.scrollTop())
@@ -73,7 +73,7 @@ jQuery ($) ->
 	$("#terms_agree.button").click (b) ->
 		if $("#terms_agree.button").hasClass("active")
 			$("#terms_container").removeClass("active")
-			$("#ninja_forms_field_64").prop('checked', true)
+			$("#ninja_forms_field_64, #ninja_forms_field_131").prop('checked', true)
 			$("body").removeClass("fixed")
 		else $("#terms_instruction").addClass("remind")
 			
